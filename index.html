@@ -1,0 +1,1404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#0d0a12">
+  <title>WebPortfolio_Edan — Rhon Yuan M. Edan</title>
+  <meta name="description" content="Portfolio of Rhon Yuan M. Edan — BSIT student &amp; IT/Software Intern showcasing Amethyx AI, SchedSTI, and Crystal Gems!.">
+  <link rel="icon" type="image/jpeg" href="Pixel Portrait.jpeg">
+  <link rel="apple-touch-icon" href="Pixel Portrait.jpeg">
+  <meta property="og:title" content="Rhon Yuan M. Edan — IT &amp; Software Portfolio">
+  <meta property="og:description" content="Cross-platform software, AI systems, and web projects including Amethyx AI, SchedSTI, and Crystal Gems!.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="Pixel Portrait.jpeg">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Rhon Yuan M. Edan — IT &amp; Software Portfolio">
+  <meta name="twitter:description" content="Cross-platform software, AI systems, and web projects including Amethyx AI, SchedSTI, and Crystal Gems!.">
+  <meta name="twitter:image" content="Pixel Portrait.jpeg">
+  <link rel="stylesheet" href="WebPortfolio_Edan.css">
+</head>
+<body>
+  <!-- Subtle Organized IT Trace Lines Background (steps smoothly every 3s) -->
+  <canvas id="itLinesCanvas" class="it-lines-canvas" aria-hidden="true"></canvas>
+
+  <!-- Clean Organized IT Terminal-Lines Load Transition -->
+  <div class="intro-curtain" aria-hidden="true">
+    <div class="intro-terminal-lines">
+      <div class="intro-code-line">&gt; init WebPortfolio_Edan ...</div>
+      <div class="intro-code-line">&gt; load module: /projects [Amethyx AI, SchedSTI, Crystal Gems!]</div>
+      <div class="intro-code-line">&gt; load module: /toolkit [HTML5, CSS3, JS, C#, Java, Python, SQLite, Linux]</div>
+      <div class="intro-code-line">&gt; status: ready</div>
+    </div>
+  </div>
+
+  <!-- Centered Navigation with Top-Left Active Status -->
+  <header class="site-header no-select">
+    <nav class="nav-inner" aria-label="Primary navigation">
+      <a href="#contact" class="nav-status" title="Rhon Yuan M. Edan — Active &amp; Open for OJT / IT Internship">
+        <span class="status-dot" aria-hidden="true"></span>
+        <span><strong>Active</strong> · Rhon Yuan Edan</span>
+      </a>
+      <ul class="nav-links">
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page-shell page-fade" id="top">
+    <!-- Hero & Interactive Portfolio Terminal -->
+    <section class="hero-grid">
+      <div class="no-select">
+        <div class="hero-profile-row">
+          <img src="Pixel Portrait.jpeg" alt="Yuan Edan pixel portrait" class="pixel-avatar">
+          <div>
+            <div class="hero-role">IT Intern · Software &amp; Web Development</div>
+            <h1 class="hero-name">Rhon Yuan M. Edan</h1>
+          </div>
+        </div>
+        <p class="hero-bio">
+          Motivated BSIT candidate grounded in Object-Oriented Programming (OOP) fundamentals,
+          enterprise logic, and multi-platform operating systems. Eager to apply logical
+          problem-solving and software development foundations as an IT / Software Intern.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn-ui primary">View Projects</a>
+          <a href="https://github.com/WaniBoogles" target="_blank" rel="noopener noreferrer" class="btn-ui">
+            <img src="assets/icons/github.svg" alt="" class="btn-icon">
+            <span>WaniBoogles</span>
+          </a>
+          <a href="https://www.linkedin.com/in/rhon-yuan-edan-63069736b" target="_blank" rel="noopener noreferrer" class="btn-ui">
+            <img src="assets/icons/linkedin.svg" alt="" class="btn-icon">
+            <span>LinkedIn</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Interactive Portfolio Terminal Slot -->
+      <div class="terminal-slot">
+        <div class="terminal-backdrop" id="termBackdrop"></div>
+        <div class="terminal-glitch-fx" id="termGlitchFx" aria-hidden="true">
+          <div class="glitch-slice"></div>
+          <div class="glitch-slice"></div>
+          <div class="glitch-slice"></div>
+          <div class="glitch-slice"></div>
+          <div class="glitch-slice"></div>
+          <div class="glitch-slice"></div>
+          <div class="glitch-slice"></div>
+          <div class="glitch-slice"></div>
+        </div>
+
+        <div class="terminal-window" id="termWindow" aria-label="Interactive portfolio terminal">
+          <div class="terminal-titlebar no-select">
+            <span>visitor@Edan-Portfolio: ~</span>
+            <div class="terminal-win-btns">
+              <button type="button" class="t-win-btn" id="termMinBtn" title="Minimize" aria-label="Minimize terminal">
+                <svg viewBox="0 0 10 10"><line x1="1.5" y1="5.5" x2="8.5" y2="5.5"/></svg>
+              </button>
+              <button type="button" class="t-win-btn" id="termMaxBtn" title="Maximize" aria-label="Maximize terminal">
+                <svg viewBox="0 0 10 10"><rect x="1.8" y="1.8" width="6.4" height="6.4" rx="1"/></svg>
+              </button>
+              <button type="button" class="t-win-btn close" id="termCloseBtn" title="Close" aria-label="Close terminal">
+                <svg viewBox="0 0 10 10"><line x1="2" y1="2" x2="8" y2="8"/><line x1="8" y1="2" x2="2" y2="8"/></svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="terminal-screen" id="termScreen">
+            <div class="term-neofetch no-select">
+              <img src="Pixel Portrait.jpeg" alt="Pixel profile portrait" class="term-portrait">
+              <div class="term-meta">
+                <strong>Rhon Yuan M. Edan</strong>
+                <span>GitHub: <a href="https://github.com/WaniBoogles" target="_blank" rel="noopener noreferrer">github.com/WaniBoogles</a></span>
+                <span>LinkedIn: <a href="https://www.linkedin.com/in/rhon-yuan-edan-63069736b" target="_blank" rel="noopener noreferrer">in/rhon-yuan-edan-63069736b</a></span>
+                <span>Role: IT / Software Intern</span>
+              </div>
+            </div>
+            <div class="term-line accent">Ask anything about my works, skills, GitHub, LinkedIn, or email:</div>
+            <div class="term-line muted">Examples: "creation", "tell me about amethyx", "what skills do you use?"</div>
+            <div id="termHistory"></div>
+            <form class="term-input-row" id="termForm" autocomplete="off">
+              <span class="term-prompt-label">visitor@portfolio</span><span>:</span><span class="term-path">~</span><span>$</span>
+              <input
+                type="text"
+                class="term-input"
+                id="termInput"
+                aria-label="Terminal command input"
+                placeholder="type 'creation' or ask a question..."
+                spellcheck="false"
+              >
+            </form>
+          </div>
+
+          <div class="terminal-hints no-select">
+            <span class="hint-label">Quick commands:</span>
+            <button type="button" class="hint-cmd" data-cmd="creation">creation</button>
+            <button type="button" class="hint-cmd" data-cmd="skills">skills</button>
+            <button type="button" class="hint-cmd" data-cmd="github">github</button>
+            <button type="button" class="hint-cmd" data-cmd="linkedin">linkedin</button>
+            <button type="button" class="hint-cmd" data-cmd="email">email</button>
+            <button type="button" class="hint-cmd" data-cmd="clear">clear</button>
+          </div>
+        </div>
+
+        <!-- Terminal Launcher shown when closed -->
+        <button type="button" class="terminal-launcher no-select" id="termLauncher" aria-label="Open Edan Terminal">
+          <div class="terminal-app-icon" aria-hidden="true">&gt;<span>_</span></div>
+          <div class="terminal-launcher-title">Edan Terminal</div>
+        </button>
+      </div>
+    </section>
+
+    <div class="kindergarten-ledge" aria-hidden="true"></div>
+
+    <!-- Projects Section (Horizontal Rows: Slideshow Left, Info Right) -->
+    <section class="section-block no-select" id="projects">
+      <div class="section-head">
+        <div class="section-label">Projects</div>
+        <h2 class="section-title">My Works</h2>
+        <p class="section-sub">Hover over a preview to zoom, or click to view it full-size.</p>
+      </div>
+
+      <div class="projects-stack">
+        <!-- Project 1: Amethyx AI -->
+        <article class="project-row-card">
+          <div class="slideshow-window" data-interval="4000" aria-label="Amethyx AI screenshots slideshow">
+            <div class="slide-track">
+              <div class="slide-item active" data-caption="Amethyx AI — Desktop &amp; Chat Interface">
+                <img src="assets/amethyx-desktop.png" alt="Amethyx AI Desktop and Chat Interface">
+              </div>
+              <div class="slide-item" data-caption="Amethyx AI — Multimodal &amp; /imagine">
+                <img src="assets/amethyx-multimodal.png" alt="Amethyx AI Multimodal and /imagine generation">
+              </div>
+              <div class="slide-item" data-caption="Amethyx AI — Android App &amp; Server Relay">
+                <img src="assets/amethyx-android.png" alt="Amethyx AI Android App and Cloudflare Worker Relay">
+              </div>
+            </div>
+            <div class="slide-bar">
+              <span class="slide-caption">Amethyx AI — Desktop &amp; Chat Interface</span>
+              <div class="slide-dots" role="tablist" aria-label="Amethyx AI slides">
+                <button type="button" class="slide-dot active" aria-label="Slide 1"></button>
+                <button type="button" class="slide-dot" aria-label="Slide 2"></button>
+                <button type="button" class="slide-dot" aria-label="Slide 3"></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-body">
+            <h3 class="project-title">Amethyx AI</h3>
+            <p class="project-desc">
+              A cross-platform multimodal AI assistant for Linux, Windows (.exe), and Android (.apk),
+              combining local SQLite RAG memory, live web search, Groq &amp; Gemini cloud routing,
+              live voice dictation, and /imagine image generation.
+            </p>
+            <div class="lang-row">
+              <button type="button" class="lang-tag" data-info="python"><img src="assets/icons/python.svg" alt="">Python</button>
+              <button type="button" class="lang-tag" data-info="javascript"><img src="assets/icons/javascript.svg" alt="">JavaScript</button>
+              <button type="button" class="lang-tag" data-info="html5"><img src="assets/icons/html5.svg" alt="">HTML5</button>
+              <button type="button" class="lang-tag" data-info="css3"><img src="assets/icons/css3.svg" alt="">CSS3</button>
+              <button type="button" class="lang-tag" data-info="java-android"><img src="assets/icons/java.svg" alt="">Java (Android)</button>
+              <button type="button" class="lang-tag" data-info="sqlite"><img src="assets/icons/sqlite.svg" alt="">SQLite</button>
+              <button type="button" class="lang-tag" data-info="cloudflare"><img src="assets/icons/cloudflare.svg" alt="">Cloudflare Workers</button>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/WaniBoogles/AmethyxAI" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                <img src="assets/icons/github.svg" alt="">
+                <span>GitHub Repo</span>
+              </a>
+              <button type="button" class="project-link-btn" data-project-details="amethyx">
+                <span>View Details</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2: SchedSTI -->
+        <article class="project-row-card">
+          <div class="slideshow-window" data-interval="4000" aria-label="SchedSTI screenshots slideshow">
+            <div class="slide-track">
+              <div class="slide-item active" data-caption="SchedSTI — Login Page">
+                <img src="assets/schedsti-login.png" alt="SchedSTI Login Page">
+              </div>
+              <div class="slide-item" data-caption="SchedSTI — Regular Schedule">
+                <img src="assets/schedsti-regular-schedule.png" alt="SchedSTI Regular Schedule view">
+              </div>
+              <div class="slide-item" data-caption="SchedSTI — Personal Schedule">
+                <img src="assets/schedsti-personal-schedule.png" alt="SchedSTI Personal Schedule view with placeholders">
+              </div>
+            </div>
+            <div class="slide-bar">
+              <span class="slide-caption">SchedSTI — Login Page</span>
+              <div class="slide-dots" role="tablist" aria-label="SchedSTI slides">
+                <button type="button" class="slide-dot active" aria-label="Slide 1"></button>
+                <button type="button" class="slide-dot" aria-label="Slide 2"></button>
+                <button type="button" class="slide-dot" aria-label="Slide 3"></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-body">
+            <h3 class="project-title">SchedSTI</h3>
+            <p class="project-desc">
+              A role-based desktop application for managing regular class schedules, conflict-free
+              time slots, and room allocations across Admin/HR, Department Heads, and Faculty.
+            </p>
+            <div class="lang-row">
+              <button type="button" class="lang-tag" data-info="csharp"><img src="assets/icons/csharp.svg" alt="">C#</button>
+              <button type="button" class="lang-tag" data-info="dotnet"><img src="assets/icons/dotnet.svg" alt="">.NET Framework</button>
+            </div>
+            <div class="project-links">
+              <button type="button" class="project-link-btn" data-project-details="schedsti">
+                <span>View Details</span>
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3: Crystal Gems! -->
+        <article class="project-row-card">
+          <div class="slideshow-window" data-interval="4000" aria-label="Crystal Gems screenshots slideshow">
+            <div class="slide-track">
+              <div class="slide-item active" data-caption="Crystal Gems! — Startup">
+                <img src="assets/crystal-startup.png" alt="Crystal Gems startup screen">
+              </div>
+              <div class="slide-item" data-caption="Crystal Gems! — Main Menu">
+                <img src="assets/crystal-main-menu.png" alt="Crystal Gems main menu">
+              </div>
+              <div class="slide-item" data-caption="Crystal Gems! — Map">
+                <img src="assets/crystal-map.png" alt="Crystal Gems stage map selection">
+              </div>
+            </div>
+            <div class="slide-bar">
+              <span class="slide-caption">Crystal Gems! — Startup</span>
+              <div class="slide-dots" role="tablist" aria-label="Crystal Gems slides">
+                <button type="button" class="slide-dot active" aria-label="Slide 1"></button>
+                <button type="button" class="slide-dot" aria-label="Slide 2"></button>
+                <button type="button" class="slide-dot" aria-label="Slide 3"></button>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-body">
+            <h3 class="project-title">Crystal Gems!</h3>
+            <p class="project-desc">
+              An offline 2D browser game built to launch cleanly on Linux Mint, featuring a custom
+              startup splash, interactive main menu, synthesized audio, and playable stage maps.
+            </p>
+            <div class="lang-row">
+              <button type="button" class="lang-tag" data-info="html5"><img src="assets/icons/html5.svg" alt="">HTML5</button>
+              <button type="button" class="lang-tag" data-info="css3"><img src="assets/icons/css3.svg" alt="">CSS3</button>
+              <button type="button" class="lang-tag" data-info="javascript"><img src="assets/icons/javascript.svg" alt="">JavaScript</button>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/WaniBoogles/Crystal-Gems-Fan-made-game-" target="_blank" rel="noopener noreferrer" class="project-link-btn">
+                <img src="assets/icons/github.svg" alt="">
+                <span>GitHub Repo</span>
+              </a>
+              <button type="button" class="project-link-btn" data-project-details="crystal">
+                <span>View Details</span>
+              </button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <div class="kindergarten-ledge" aria-hidden="true"></div>
+
+    <!-- Skills Section (Separate Linings: Technical & Soft) -->
+    <section class="section-block no-select" id="skills">
+      <div class="section-head">
+        <div class="section-label">Skills</div>
+        <h2 class="section-title">Technical</h2>
+      </div>
+
+      <div class="skills-stack">
+        <!-- Lining 1: Technical -->
+        <div>
+          <div class="toolkit-grid">
+            <button type="button" class="toolkit-card" data-info="html5">
+              <div class="toolkit-icon"><img src="assets/icons/html5.svg" alt="HTML5 logo"></div>
+              <div class="toolkit-info">
+                <span class="toolkit-name">HTML5</span>
+                <span class="toolkit-basis">Page Structure &amp; UI</span>
+              </div>
+              <div class="skill-tooltip" role="tooltip">
+                Semantic markup, accessible layouts, and interactive Canvas apps for web &amp; hybrid UIs.
+                <span class="skill-tooltip-hint">Click for full overview</span>
+              </div>
+            </button>
+
+            <button type="button" class="toolkit-card" data-info="css3">
+              <div class="toolkit-icon"><img src="assets/icons/css3.svg" alt="CSS3 logo"></div>
+              <div class="toolkit-info">
+                <span class="toolkit-name">CSS3</span>
+                <span class="toolkit-basis">Responsive Styling</span>
+              </div>
+              <div class="skill-tooltip" role="tooltip">
+                Modern Flexbox/Grid layouts, custom themes, smooth micro-interactions, and clean mobile responsiveness.
+                <span class="skill-tooltip-hint">Click for full overview</span>
+              </div>
+            </button>
+
+            <button type="button" class="toolkit-card" data-info="javascript">
+              <div class="toolkit-icon"><img src="assets/icons/javascript.svg" alt="JavaScript logo"></div>
+              <div class="toolkit-info">
+                <span class="toolkit-name">JavaScript</span>
+                <span class="toolkit-basis">Interactive UI &amp; Logic</span>
+              </div>
+              <div class="skill-tooltip" role="tooltip">
+                Client-side app logic, 2D Canvas &amp; Web Audio synthesis, async API integration, and serverless Worker relays.
+                <span class="skill-tooltip-hint">Click for full overview</span>
+              </div>
+            </button>
+
+            <button type="button" class="toolkit-card" data-info="csharp">
+              <div class="toolkit-icon"><img src="assets/icons/csharp.svg" alt="C# logo"></div>
+              <div class="toolkit-info">
+                <span class="toolkit-name">C# (.NET Framework)</span>
+                <span class="toolkit-basis">Desktop Apps &amp; OOP</span>
+              </div>
+              <div class="skill-tooltip" role="tooltip">
+                Strongly-typed OOP desktop development for role-based workflows, scheduling logic, and cross-platform builds.
+                <span class="skill-tooltip-hint">Click for full overview</span>
+              </div>
+            </button>
+
+            <button type="button" class="toolkit-card" data-info="java">
+              <div class="toolkit-icon"><img src="assets/icons/java.svg" alt="Java logo"></div>
+              <div class="toolkit-info">
+                <span class="toolkit-name">Java (Core OOP)</span>
+                <span class="toolkit-basis">OOP &amp; Android Integration</span>
+              </div>
+              <div class="skill-tooltip" role="tooltip">
+                Core object-oriented architecture, event-driven programming, UML design, and Android WebView/vault integration.
+                <span class="skill-tooltip-hint">Click for full overview</span>
+              </div>
+            </button>
+
+            <button type="button" class="toolkit-card" data-info="python">
+              <div class="toolkit-icon"><img src="assets/icons/python.svg" alt="Python logo"></div>
+              <div class="toolkit-info">
+                <span class="toolkit-name">Python</span>
+                <span class="toolkit-basis">Backend, RAG &amp; Scripting</span>
+              </div>
+              <div class="skill-tooltip" role="tooltip">
+                Clean scripting, backend automation, local SQLite RAG pipelines, multimodal parsing, and API routing.
+                <span class="skill-tooltip-hint">Click for full overview</span>
+              </div>
+            </button>
+
+            <button type="button" class="toolkit-card" data-info="sqlite">
+              <div class="toolkit-icon"><img src="assets/icons/sqlite.svg" alt="SQLite logo"></div>
+              <div class="toolkit-info">
+                <span class="toolkit-name">SQLite</span>
+                <span class="toolkit-basis">Local Database &amp; RAG</span>
+              </div>
+              <div class="skill-tooltip" role="tooltip">
+                Zero-config embedded SQL storage for local chat history, notes, and chunked RAG retrieval.
+                <span class="skill-tooltip-hint">Click for full overview</span>
+              </div>
+            </button>
+
+            <button type="button" class="toolkit-card" data-info="linux">
+              <div class="toolkit-icon"><img src="assets/icons/linux.svg" alt="Linux logo"></div>
+              <div class="toolkit-info">
+                <span class="toolkit-name">Linux</span>
+                <span class="toolkit-basis">Mint, Ubuntu &amp; CLI</span>
+              </div>
+              <div class="skill-tooltip" role="tooltip">
+                Daily driver workflow on Linux Mint &amp; Ubuntu — Bash scripting, CLI tooling, and cross-platform app packaging.
+                <span class="skill-tooltip-hint">Click for full overview</span>
+              </div>
+            </button>
+
+            <button type="button" class="toolkit-card" data-info="sap">
+              <div class="toolkit-icon"><img src="assets/icons/sap.svg" alt="SAP logo"></div>
+              <div class="toolkit-info">
+                <span class="toolkit-name">SAP S/4HANA</span>
+                <span class="toolkit-basis">Enterprise Fundamentals</span>
+              </div>
+              <div class="skill-tooltip" role="tooltip">
+                Foundational ERP process concepts, enterprise data flow, and organizational workflow alignment.
+                <span class="skill-tooltip-hint">Click for full overview</span>
+              </div>
+            </button>
+
+            <button type="button" class="toolkit-card" data-info="github">
+              <div class="toolkit-icon"><img src="assets/icons/github.svg" alt="GitHub logo"></div>
+              <div class="toolkit-info">
+                <span class="toolkit-name">GitHub</span>
+                <span class="toolkit-basis">Version Control</span>
+              </div>
+              <div class="skill-tooltip" role="tooltip">
+                Repository management, commit history, issue tracking, and public/private source control workflows.
+                <span class="skill-tooltip-hint">Click for full overview</span>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        <!-- Lining 2: Soft -->
+        <div>
+          <div class="skill-group-header">
+            <h3 class="skill-group-title">Soft</h3>
+          </div>
+          <div class="toolkit-grid soft-grid">
+            <button type="button" class="toolkit-card" data-info="soft-logic">
+              <div class="toolkit-icon"><img src="assets/icons/soft-logic.svg" alt=""></div>
+              <div class="toolkit-info">
+                <span class="toolkit-name">Analytical Thinking</span>
+                <span class="toolkit-basis">Logical Problem-Solving</span>
+              </div>
+              <div class="skill-tooltip" role="tooltip">
+                Breaking complex requirements and bugs down into clear, testable steps before writing code.
+                <span class="skill-tooltip-hint">Click for full overview</span>
+              </div>
+            </button>
+
+            <button type="button" class="toolkit-card" data-info="soft-team">
+              <div class="toolkit-icon"><img src="assets/icons/soft-team.svg" alt=""></div>
+              <div class="toolkit-info">
+                <span class="toolkit-name">Team Collaboration</span>
+                <span class="toolkit-basis">Open Communication</span>
+              </div>
+              <div class="skill-tooltip" role="tooltip">
+                Sharing progress clearly, listening to feedback, and aligning cleanly with teammates and stakeholders.
+                <span class="skill-tooltip-hint">Click for full overview</span>
+              </div>
+            </button>
+
+            <button type="button" class="toolkit-card" data-info="soft-adapt">
+              <div class="toolkit-icon"><img src="assets/icons/soft-adapt.svg" alt=""></div>
+              <div class="toolkit-info">
+                <span class="toolkit-name">Adaptability</span>
+                <span class="toolkit-basis">Eager to Learn New Tech</span>
+              </div>
+              <div class="skill-tooltip" role="tooltip">
+                Picking up new frameworks, OS environments, and shifting project requirements without losing momentum.
+                <span class="skill-tooltip-hint">Click for full overview</span>
+              </div>
+            </button>
+
+            <button type="button" class="toolkit-card" data-info="soft-time">
+              <div class="toolkit-icon"><img src="assets/icons/soft-time.svg" alt=""></div>
+              <div class="toolkit-info">
+                <span class="toolkit-name">Time Management</span>
+                <span class="toolkit-basis">Attention to Detail</span>
+              </div>
+              <div class="skill-tooltip" role="tooltip">
+                Prioritizing milestones realistically while keeping code, UI polish, and deliverables organized.
+                <span class="skill-tooltip-hint">Click for full overview</span>
+              </div>
+            </button>
+
+            <button type="button" class="toolkit-card" data-info="soft-empathy">
+              <div class="toolkit-icon"><img src="assets/icons/soft-empathy.svg" alt=""></div>
+              <div class="toolkit-info">
+                <span class="toolkit-name">Empathy</span>
+                <span class="toolkit-basis">User-Centered Mindset</span>
+              </div>
+              <div class="skill-tooltip" role="tooltip">
+                Designing software around real end-users — prioritizing privacy, clarity, and comfortable everyday UX.
+                <span class="skill-tooltip-hint">Click for full overview</span>
+              </div>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="section-block no-select" id="contact">
+      <div class="contact-box">
+        <div>
+          <h2>Get in Touch</h2>
+          <p>Open for On-the-Job Training (OJT) / IT Internship opportunities.</p>
+        </div>
+        <div class="contact-actions">
+          <a href="https://github.com/WaniBoogles" target="_blank" rel="noopener noreferrer" class="btn-ui">
+            <img src="assets/icons/github.svg" alt="" class="btn-icon">
+            <span>GitHub: WaniBoogles</span>
+          </a>
+          <a href="https://www.linkedin.com/in/rhon-yuan-edan-63069736b" target="_blank" rel="noopener noreferrer" class="btn-ui">
+            <img src="assets/icons/linkedin.svg" alt="" class="btn-icon">
+            <span>LinkedIn</span>
+          </a>
+          <button type="button" class="btn-ui" id="copyEmailBtn" data-email="rhonyuane@gmail.com">
+            <svg viewBox="0 0 24 24" class="btn-icon" aria-hidden="true">
+              <rect x="9" y="9" width="13" height="13" rx="2"/>
+              <path d="M5 15H4a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h9a2 2 0 0 1 2 2v1"/>
+            </svg>
+            <span id="copyEmailLabel">Copy Email</span>
+          </button>
+          <a href="mailto:rhonyuane@gmail.com" class="btn-ui primary">rhonyuane@gmail.com</a>
+        </div>
+      </div>
+
+      <footer class="site-footer">
+        <p>WebPortfolio_Edan</p>
+      </footer>
+    </section>
+  </main>
+
+  <!-- Full-size Screenshot Modal -->
+  <div class="lightbox no-select" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle">
+    <div class="lightbox-inner">
+      <div class="lightbox-bar">
+        <span class="lightbox-title" id="lightboxTitle">Preview</span>
+        <button type="button" class="lightbox-close" id="lightboxClose">Close</button>
+      </div>
+      <img class="lightbox-img" id="lightboxImg" src="" alt="">
+    </div>
+  </div>
+
+  <!-- Reusable Project Extended Details Modal -->
+  <div class="lightbox no-select" id="projectDetailsModal" role="dialog" aria-modal="true" aria-labelledby="projModalTitle">
+    <div class="lightbox-inner details-modal-inner">
+      <div class="lightbox-bar">
+        <span class="lightbox-title" id="projModalTitle">Project Overview</span>
+        <button type="button" class="lightbox-close" id="projModalClose">Close</button>
+      </div>
+      <div class="details-modal-body">
+        <p class="details-overview" id="projModalOverview"></p>
+        <div class="details-heading">Key Features</div>
+        <ul class="details-list" id="projModalFeatures"></ul>
+        <div class="details-footer">
+          <span class="details-note" id="projModalNote"></span>
+          <a href="#" target="_blank" rel="noopener noreferrer" class="project-link-btn" id="projModalRepo">
+            <img src="assets/icons/github.svg" alt="">
+            <span>Open on GitHub</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Language & Skill Overview Modal -->
+  <div class="lightbox no-select" id="infoModal" role="dialog" aria-modal="true" aria-labelledby="infoModalTitle">
+    <div class="lightbox-inner info-modal-inner">
+      <div class="lightbox-bar">
+        <span class="lightbox-title" id="infoModalTitle">Overview</span>
+        <button type="button" class="lightbox-close" id="infoModalClose">Close</button>
+      </div>
+      <div class="details-modal-body">
+        <div class="info-hero-row">
+          <div class="info-icon-box"><img id="infoModalImg" src="" alt=""></div>
+          <div>
+            <div class="info-hero-title" id="infoModalName"></div>
+            <div class="info-hero-cat" id="infoModalCat"></div>
+          </div>
+        </div>
+        <p id="infoModalDesc"></p>
+        <div class="info-callout">
+          <strong>How I Apply It</strong>
+          <span id="infoModalUsage"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    (function () {
+      // 0. Clean Organized IT Trace Lines Background (steps/moves smoothly every 3 seconds)
+      const canvas = document.getElementById('itLinesCanvas');
+      if (canvas && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        const ctx = canvas.getContext('2d');
+        let traces = [];
+
+        const buildTraces = () => {
+          canvas.width = window.innerWidth;
+          canvas.height = window.innerHeight;
+          const rows = Math.max(6, Math.floor(canvas.height / 110));
+          traces = [];
+          for (let i = 0; i < rows; i++) {
+            const y = 70 + i * 110;
+            const bendX = Math.floor((0.2 + ((i * 37) % 60) / 100) * canvas.width);
+            const drop = (i % 2 === 0 ? 22 : -22);
+            traces.push({
+              y,
+              bendX,
+              drop,
+              phase: (i * 0.25) % 1
+            });
+          }
+        };
+
+        let lastStep = performance.now();
+        let stepProgress = 0;
+
+        const drawTraces = (now) => {
+          if (!ctx) return;
+          const elapsed = now - lastStep;
+          if (elapsed >= 3000) {
+            lastStep = now;
+            traces.forEach((t) => {
+              t.phase = (t.phase + 0.34) % 1;
+            });
+          }
+          stepProgress = Math.min(1, (now - lastStep) / 900);
+
+          ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+          traces.forEach((t, idx) => {
+            // Subtle static circuit guide line
+            ctx.beginPath();
+            ctx.moveTo(0, t.y);
+            ctx.lineTo(t.bendX, t.y);
+            ctx.lineTo(t.bendX + 24, t.y + t.drop);
+            ctx.lineTo(canvas.width, t.y + t.drop);
+            ctx.strokeStyle = 'rgba(139, 92, 246, 0.08)';
+            ctx.lineWidth = 1;
+            ctx.stroke();
+
+            // Clean moving data packet segment along the organized track
+            const segLen = 95;
+            const travel = (t.phase + stepProgress * 0.34) % 1;
+            const px = travel * (canvas.width + segLen) - segLen;
+            const py = px > t.bendX + 24 ? t.y + t.drop : t.y;
+
+            const grad = ctx.createLinearGradient(px, py, px + segLen, py);
+            grad.addColorStop(0, 'rgba(168, 85, 247, 0)');
+            grad.addColorStop(0.5, 'rgba(192, 132, 252, 0.32)');
+            grad.addColorStop(1, 'rgba(168, 85, 247, 0)');
+
+            ctx.beginPath();
+            ctx.moveTo(px, py);
+            ctx.lineTo(px + segLen, py);
+            ctx.strokeStyle = grad;
+            ctx.lineWidth = 1.6;
+            ctx.stroke();
+
+            // Crisp node dot at bend
+            ctx.beginPath();
+            ctx.arc(t.bendX, t.y, 2, 0, Math.PI * 2);
+            ctx.fillStyle = idx % 2 === 0 ? 'rgba(168, 85, 247, 0.25)' : 'rgba(192, 132, 252, 0.18)';
+            ctx.fill();
+          });
+
+          requestAnimationFrame(drawTraces);
+        };
+
+        buildTraces();
+        window.addEventListener('resize', buildTraces);
+        requestAnimationFrame(drawTraces);
+      }
+
+      // 1. Interactive Portfolio Terminal + Window Controls (Minimize, Maximize, Close/Launch)
+      const termWindow = document.getElementById('termWindow');
+      const termBackdrop = document.getElementById('termBackdrop');
+      const termLauncher = document.getElementById('termLauncher');
+      const termGlitchFx = document.getElementById('termGlitchFx');
+      const termMinBtn = document.getElementById('termMinBtn');
+      const termMaxBtn = document.getElementById('termMaxBtn');
+      const termCloseBtn = document.getElementById('termCloseBtn');
+      const termScreen = document.getElementById('termScreen');
+      const termHistory = document.getElementById('termHistory');
+      const termForm = document.getElementById('termForm');
+      const termInput = document.getElementById('termInput');
+
+      const maxSvg = '<svg viewBox="0 0 10 10"><rect x="1.8" y="1.8" width="6.4" height="6.4" rx="1"/></svg>';
+      const restoreSvg = '<svg viewBox="0 0 10 10"><rect x="1.5" y="3" width="5.2" height="5.2" rx="0.8"/><path d="M3.5 3V1.8h5v5H7.2"/></svg>';
+
+      const playTerminalTransition = (done) => {
+        if (!termGlitchFx) {
+          done();
+          return;
+        }
+        termGlitchFx.classList.remove('active');
+        void termGlitchFx.offsetWidth;
+        termGlitchFx.classList.add('active');
+        setTimeout(() => {
+          done();
+        }, 160);
+        setTimeout(() => {
+          termGlitchFx.classList.remove('active');
+        }, 390);
+      };
+
+      const closeTerminal = () => {
+        if (!termWindow || !termLauncher) return;
+        if (termWindow.classList.contains('is-maximized')) {
+          termWindow.classList.remove('is-maximized');
+          if (termBackdrop) termBackdrop.classList.remove('open');
+          if (termMaxBtn) termMaxBtn.innerHTML = maxSvg;
+        }
+        playTerminalTransition(() => {
+          termWindow.classList.remove('is-minimized');
+          termWindow.classList.add('is-closed');
+          termLauncher.classList.add('visible');
+        });
+      };
+
+      const openTerminal = () => {
+        if (!termWindow || !termLauncher) return;
+        playTerminalTransition(() => {
+          termWindow.classList.remove('is-closed', 'is-minimized');
+          termLauncher.classList.remove('visible');
+          if (termInput) termInput.focus();
+        });
+      };
+
+      if (termMinBtn && termWindow) {
+        termMinBtn.addEventListener('click', () => {
+          if (termWindow.classList.contains('is-maximized')) {
+            termWindow.classList.remove('is-maximized');
+            if (termBackdrop) termBackdrop.classList.remove('open');
+            if (termMaxBtn) termMaxBtn.innerHTML = maxSvg;
+          }
+          termWindow.classList.toggle('is-minimized');
+        });
+      }
+
+      if (termMaxBtn && termWindow) {
+        termMaxBtn.addEventListener('click', () => {
+          termWindow.classList.remove('is-minimized');
+          const willMax = !termWindow.classList.contains('is-maximized');
+          termWindow.classList.toggle('is-maximized', willMax);
+          if (termBackdrop) termBackdrop.classList.toggle('open', willMax);
+          termMaxBtn.innerHTML = willMax ? restoreSvg : maxSvg;
+          if (termInput) termInput.focus();
+        });
+      }
+
+      if (termCloseBtn) termCloseBtn.addEventListener('click', closeTerminal);
+      if (termBackdrop) {
+        termBackdrop.addEventListener('click', () => {
+          if (termWindow) termWindow.classList.remove('is-maximized');
+          termBackdrop.classList.remove('open');
+          if (termMaxBtn) termMaxBtn.innerHTML = maxSvg;
+        });
+      }
+      if (termLauncher) termLauncher.addEventListener('click', openTerminal);
+
+      const appendLine = (text, cls) => {
+        if (!termHistory) return;
+        const div = document.createElement('div');
+        div.className = 'term-line' + (cls ? ' ' + cls : '');
+        div.textContent = text;
+        termHistory.appendChild(div);
+      };
+
+      const hasAny = (str, words) => words.some((w) => str.includes(w));
+      let lastTopic = '';
+      const cmdHistory = [];
+      let historyIdx = -1;
+      const autoCommands = [
+        'creation', 'projects', 'amethyx', 'schedsti', 'crystal gems',
+        'open amethyx', 'open schedsti', 'open crystal',
+        'goto projects', 'goto skills', 'goto contact',
+        'skills', 'ojt', 'github', 'linkedin', 'email', 'help', 'clear', 'exit'
+      ];
+      let openProjectModalByKey = null;
+
+      const reply = (title, body, topic) => {
+        if (title) appendLine(title, 'accent');
+        appendLine(body);
+        if (topic) lastTopic = topic;
+      };
+
+      const runCommand = (raw) => {
+        const clean = raw.trim();
+        if (!clean) return;
+        const q = clean.toLowerCase();
+
+        cmdHistory.push(clean);
+        historyIdx = cmdHistory.length;
+
+        appendLine('visitor@portfolio:~$ ' + clean, 'muted');
+
+        if (q === 'clear' || q === 'cls') {
+          termHistory.innerHTML = '';
+          lastTopic = '';
+          return;
+        }
+
+        if (q === 'exit' || q === 'quit') {
+          closeTerminal();
+          return;
+        }
+
+        if (/^(open|view|launch)\s+/.test(q)) {
+          if (q.includes('amethyx')) {
+            if (openProjectModalByKey) openProjectModalByKey('amethyx');
+            reply('Action:', 'Opened Amethyx AI project overview.', 'amethyx');
+            if (termScreen) termScreen.scrollTop = termScreen.scrollHeight;
+            return;
+          }
+          if (q.includes('schedsti') || q.includes('sched')) {
+            if (openProjectModalByKey) openProjectModalByKey('schedsti');
+            reply('Action:', 'Opened SchedSTI project overview.', 'schedsti');
+            if (termScreen) termScreen.scrollTop = termScreen.scrollHeight;
+            return;
+          }
+          if (q.includes('crystal') || q.includes('gem')) {
+            if (openProjectModalByKey) openProjectModalByKey('crystal');
+            reply('Action:', 'Opened Crystal Gems! project overview.', 'crystal');
+            if (termScreen) termScreen.scrollTop = termScreen.scrollHeight;
+            return;
+          }
+        }
+
+        if (/^(goto|go to|scroll|cd)\s+/.test(q)) {
+          const targetId = q.includes('project') || q.includes('work') ? 'projects'
+            : q.includes('skill') ? 'skills'
+            : q.includes('contact') || q.includes('email') ? 'contact'
+            : '';
+          if (targetId) {
+            const targetEl = document.getElementById(targetId);
+            if (targetEl) targetEl.scrollIntoView({ behavior: 'smooth' });
+            reply('Navigating:', 'Scrolled to #' + targetId + '.', targetId);
+            if (termScreen) termScreen.scrollTop = termScreen.scrollHeight;
+            return;
+          }
+        }
+
+        if (q === 'help' || q === '?' || q === 'ls' || q === 'commands') {
+          appendLine('Hey! Here are things you can ask me about (↑/↓ history · Tab autocomplete):', 'accent');
+          appendLine('  creation / projects  - My built works (Amethyx AI, SchedSTI, Crystal Gems!)');
+          appendLine('  open amethyx         - Open Amethyx AI details modal (also schedsti, crystal)');
+          appendLine('  goto projects/skills - Jump directly to a section on the page');
+          appendLine('  amethyx / schedsti   - Ask about a specific project');
+          appendLine('  skills               - Technical & Soft skills (or ask about a language)');
+          appendLine('  ojt / work           - My current OJT or work status');
+          appendLine('  github / linkedin    - My GitHub repos & LinkedIn profile');
+          appendLine('  email / contact      - How to reach me');
+          appendLine('  clear / exit         - Clear or close this terminal');
+          lastTopic = 'help';
+        } else if (hasAny(q, ['you good', 'how are you', 'how r u', 'hows it going', "how's it going", 'doing good', 'whats up', "what's up", 'kamusta'])) {
+          reply('Status:', "I'm doing good, thank you for asking! Always ready to share my works or talk about an IT / Software Intern role.", 'about');
+        } else if (hasAny(q, ['professional', 'work ethic', 'reliable', 'disciplined', 'serious', 'organized'])) {
+          reply('Work Ethic:', "I keep my work organized, attentive to detail, and reliable — I take deadlines, clean structure, and clear communication seriously while keeping a warm, approachable attitude.", 'soft');
+        } else if (hasAny(q, ['hire', 'why should', 'why pick', 'choose you', 'bring to the team', 'value'])) {
+          reply('What I Bring:', "I combine OOP and responsive front-end foundations with practical cross-platform testing on Linux and Windows — plus I'm adaptable, eager to learn quickly, and focused on building tools people can actually use comfortably.", 'about');
+        } else if (hasAny(q, ['weakness', 'struggle', 'still learning', 'improve', 'challenge'])) {
+          reply('Growth Area:', "Since I'm still a 4th-year BSIT student without formal industry experience yet, I'm actively sharpening my real-world engineering workflows and always welcome constructive feedback.", 'ojt');
+        } else if (hasAny(q, ['ojt', 'working', 'employed', 'job', 'currently work', 'do you work', 'have a work', 'internship', 'available', 'hiring'])) {
+          reply('Work / OJT Status:', "Currently, I have no work nor in an OJT yet. I am a 4th-year BSIT student looking for an IT / Software Internship where I can contribute and gain real industry experience.", 'ojt');
+        } else if (hasAny(q, ['responsive', 'fast', 'quick', 'reply', 'screen size', 'scaling'])) {
+          appendLine('Responsiveness:', 'accent');
+          appendLine('Yes — both in how I communicate with a team and in what I build. In SchedSTI I handled auto-responsive UI scaling across different monitor resolutions, and in HTML5/CSS3 I focus on clean layouts that adapt smoothly.');
+        } else if (hasAny(q, ['excel', 'strength', 'strong', 'best at', 'good at', 'specialty', 'good in', 'great at'])) {
+          appendLine('Where I Excel:', 'accent');
+          appendLine('I do best when turning practical requirements into working software — especially UI layout in HTML5 & CSS3, Object-Oriented Programming in C# and Java, and setting up clean cross-platform builds on Linux Mint and Windows.');
+        } else if (hasAny(q, ['schedsti', 'sched', 'scheduling', 'schedule', 'timeslot', 'time slot', 'login'])) {
+          if (hasAny(q, ['why', 'standalone', 'desktop', 'offline'])) {
+            reply('SchedSTI (Architecture):', "I built SchedSTI as a standalone C# (.NET Framework) desktop system so Admin/HR, Department Heads, and Faculty can launch it directly on Windows or Linux Mint and manage regular schedules cleanly without needing a heavy web/server setup.", 'schedsti');
+          } else if (hasAny(q, ['privacy', 'confidential', 'placeholder', 'instructor', 'name', 'hide'])) {
+            reply('SchedSTI (Privacy):', "On this portfolio, I replaced instructor names, subject codes, sections, and exact schedule times with placeholders so no confidential school or faculty information is exposed publicly.", 'schedsti');
+          } else {
+            reply('SchedSTI:', "I built SchedSTI in C# (.NET Framework) so scheduling regular classes and time slots is clear and conflict-free across Admin/HR, Department Heads, and Faculty. It runs cross-platform on Windows and Linux Mint.", 'schedsti');
+          }
+        } else if (hasAny(q, ['crystal', 'gem', 'steven', 'game', 'canvas', 'map', 'main menu', 'startup'])) {
+          if (hasAny(q, ['why', 'double', 'offline', 'mint', 'linux'])) {
+            reply('Crystal Gems! (Design):', "I made Crystal Gems! completely self-contained in HTML5, CSS3, and JavaScript so I can launch it on Linux Mint just by double-tapping the file, with Web Audio synthesis and zero external installs.", 'crystal');
+          } else {
+            reply('Crystal Gems!:', "Crystal Gems! is a Steven Universe-inspired 2D HTML5 game I built to launch cleanly on Linux Mint, featuring a custom startup splash, a warm yet mature main menu, synthesized audio, and playable stage maps.", 'crystal');
+          }
+        } else if (hasAny(q, ['amethyx', 'ai assistant', 'assistant', 'rag', 'sqlite', 'cloudflare', 'relay', 'android', 'apk', 'imagine', 'voice', 'groq', 'gemini', 'multimodal'])) {
+          if (hasAny(q, ['android', 'apk', 'relay', 'cloudflare', 'public', 'key', 'vault', 'security', 'sync'])) {
+            reply('Amethyx AI (Android & Relay):', "I built both Amethyx.apk (with an AES-256-GCM encrypted key vault) and Amethyx-Public.apk so others can use it without ever touching my API keys, routed 24/7 through a PIN- and quota-protected Cloudflare Worker relay, plus LAN PC-Android sync via /api/sync.", 'amethyx');
+          } else if (hasAny(q, ['imagine', 'voice', 'tts', 'multimodal', 'pdf', 'export', 'file'])) {
+            reply('Amethyx AI (Multimodal & Voice):', "Amethyx AI reads multiple simultaneous attachments (.pdf, .docx, .pptx, .xlsx, code, photos, audio, video), supports toggle-to-stop live voice dictation and auto-read TTS, generates images with /imagine, and exports answers to .md, .html, .pdf, .docx, or .pptx in 1 click.", 'amethyx');
+          } else {
+            reply('Amethyx AI:', "Amethyx AI is my cross-platform multimodal AI assistant for Linux (GTK3/WebKit2), Windows (.exe), and Android (.apk). It combines local SQLite RAG memory, live web search, Groq & Gemini cloud routing, voice dictation, /imagine image generation, and a 24/7 Cloudflare Worker relay. Repo: https://github.com/WaniBoogles/AmethyxAI", 'amethyx');
+          }
+        } else if (hasAny(q, ['creation', 'project', 'work', 'built', 'made', 'portfolio', 'app', 'apps', 'show'])) {
+          appendLine('My Works:', 'accent');
+          appendLine('1) Amethyx AI [Python, JavaScript, HTML/CSS, Java (Android), SQLite, Cloudflare Workers] — Cross-platform multimodal AI assistant for Linux, Windows (.exe), and Android (.apk) with local RAG, Groq/Gemini routing, voice dictation, and /imagine.');
+          appendLine('2) SchedSTI [C#, .NET Framework] — Role-based scheduling desktop app for regular schedules, time slots, and room allocations across Windows and Linux.');
+          appendLine('3) Crystal Gems! [HTML5, CSS3, JavaScript] — Offline 2D browser game built for Linux Mint with a startup screen, main menu, synthesized audio, and stage maps.');
+        } else if (hasAny(q, ['python'])) {
+          appendLine('Python:', 'accent');
+          appendLine('I use Python for scripting, logical problem-solving, and powering the local backend/SQLite RAG engine of Amethyx AI — alongside project work in C# (.NET Framework), Java, and HTML5/CSS3/JS.');
+        } else if (hasAny(q, ['java']) && !q.includes('javascript')) {
+          appendLine('Java:', 'accent');
+          appendLine('I have Core OOP experience in Java — including Android WebView/vault integration for Amethyx AI, a 2D interactive game with event-driven programming and UML diagrams, plus Oracle Java Fundamentals training.');
+        } else if (hasAny(q, ['c#', 'csharp', '.net', 'dotnet'])) {
+          appendLine('C# (.NET Framework):', 'accent');
+          appendLine('C# and the .NET Framework are what I used to build SchedSTI, handling role-based access, regular schedule workflows, and cross-platform UI scaling.');
+        } else if (hasAny(q, ['html', 'css', 'javascript', 'web', 'frontend', 'front-end'])) {
+          appendLine('Web Development:', 'accent');
+          appendLine('I use HTML5, CSS3, and JavaScript for responsive layouts and interactive browser projects — like Crystal Gems! and this portfolio.');
+        } else if (hasAny(q, ['linux', 'mint', 'ubuntu', 'windows', 'os', 'bash', 'cli'])) {
+          appendLine('Operating Systems:', 'accent');
+          appendLine('I use Linux Mint daily along with Ubuntu and Windows. I like making sure my projects run smoothly on Linux (like double-clickable HTML apps and cross-platform .NET tools).');
+        } else if (hasAny(q, ['sap', 's/4hana', 'erp'])) {
+          appendLine('SAP S/4HANA:', 'accent');
+          appendLine('I have foundational knowledge of SAP S/4HANA process concepts and enterprise logic from my coursework and school training.');
+        } else if (hasAny(q, ['empathy', 'soft', 'team', 'communicate', 'communication', 'collab', 'attitude'])) {
+          appendLine('Soft Skills & Empathy:', 'accent');
+          appendLine('Empathy really matters to me in IT — building software means thinking about the people actually using it. Alongside empathy, I bring analytical thinking, team collaboration, adaptability, and time management.');
+        } else if (hasAny(q, ['skill', 'tech', 'language', 'lang', 'stack', 'tool', 'know'])) {
+          appendLine('Technical & Soft Skills:', 'accent');
+          appendLine('Technical: HTML5, CSS3, JavaScript, C# (.NET Framework), Java (Core OOP & Android), Python, SQLite, Linux, SAP S/4HANA (Fundamentals), and GitHub.');
+          appendLine('Soft: Analytical Thinking, Team Collaboration, Adaptability, Time Management, and Empathy.');
+        } else if (hasAny(q, ['linkedin', 'linked in', 'profile'])) {
+          appendLine('LinkedIn:', 'accent');
+          appendLine('You can connect with me on LinkedIn at https://www.linkedin.com/in/rhon-yuan-edan-63069736b.');
+        } else if (hasAny(q, ['github', 'git', 'repo', 'waniboogles', 'code', 'source'])) {
+          appendLine('GitHub:', 'accent');
+          appendLine('My GitHub account is WaniBoogles — you can check out repos like AmethyxAI (https://github.com/WaniBoogles/AmethyxAI), Crystal-Gems-Fan-made-game-, and SchedSTI at https://github.com/WaniBoogles.');
+        } else if (hasAny(q, ['email', 'contact', 'mail', 'reach', 'hire', 'message', 'apply'])) {
+          appendLine('Contact:', 'accent');
+          appendLine('Thank you for checking out my portfolio! You can email me at rhonyuane@gmail.com, connect on LinkedIn (https://www.linkedin.com/in/rhon-yuan-edan-63069736b), or reach me via GitHub (WaniBoogles).');
+        } else if (hasAny(q, ['school', 'college', 'sti', 'study', 'studying', 'course', 'degree', 'bsit', 'graduate', 'education'])) {
+          appendLine('Education:', 'accent');
+          appendLine('I am a 4th-year Bachelor of Science in Information Technology (BSIT) student at STI College Lucena, with a STEM Senior High School background.');
+        } else if (hasAny(q, ['theme', 'color', 'purple', 'dark', 'pixel', 'portrait', 'design', 'style'])) {
+          appendLine('Design & Aesthetic:', 'accent');
+          appendLine('I prefer dark gray, black, and purple with a clean, minimal look — inspired a bit by Prime Kindergarten and the warm, mature feel of the Steven Universe menu, plus my own Piskel pixel portrait.');
+        } else if (hasAny(q, ['who are you', 'your name', 'nickname', 'yuan', 'wani', 'edan', 'about'])) {
+          appendLine('About Me:', 'accent');
+          appendLine('I am Rhon Yuan M. Edan (you can call me Yuan, or Wani). I am a BSIT student focused on OOP fundamentals, enterprise logic, and multi-platform software/web development.');
+        } else if (hasAny(q, ['thank', 'thanks', 'ty'])) {
+          reply('', "You're welcome! Let me know if you want to check anything else about my works or skills.", lastTopic);
+        } else if (hasAny(q, ['good move', 'nice', 'cool', 'awesome', 'great', 'makes sense', 'alright', 'okay', 'ok', 'yes', 'yep', 'yeah', 'sure']) && q.split(/\s+/).length <= 5) {
+          if (lastTopic === 'schedsti') {
+            reply('', "Thanks! Making it standalone and keeping confidential data out while showing the scheduling flow felt like the right call.", lastTopic);
+          } else if (lastTopic === 'crystal') {
+            reply('', "Glad you like it! Feel free to check out the startup, main menu, and stage map previews down below.", lastTopic);
+          } else if (lastTopic === 'amethyx') {
+            reply('', "Thank you! You can also click View Details on the Amethyx AI card or check the repo at github.com/WaniBoogles/AmethyxAI.", lastTopic);
+          } else {
+            reply('', "Glad to hear that! Feel free to ask anything else about my projects, skills, OJT status, or contact info.", lastTopic);
+          }
+        } else if (['hi', 'hello', 'hey', 'yo', 'good morning', 'good afternoon', 'good evening'].includes(q)) {
+          reply('', "Hey! Ask me anything about my works (SchedSTI, Crystal Gems!, Amethyx AI), skills, OJT status, GitHub, or email.", 'greeting');
+        } else if (hasAny(q, ['why', 'how', 'tell me more', 'more']) && lastTopic) {
+          if (lastTopic === 'schedsti') {
+            reply('SchedSTI:', "Building it as a standalone .NET app made role-based access, conflict checking, and running across Windows and Linux Mint fast and straightforward for school use.", 'schedsti');
+          } else if (lastTopic === 'crystal') {
+            reply('Crystal Gems!:', "I focused on making it work completely offline in any browser on Linux Mint, with synthesized Web Audio and live-rendered stage maps.", 'crystal');
+          } else if (lastTopic === 'amethyx') {
+            reply('Amethyx AI:', "I wanted one unified assistant that stays private and portable across Linux, Windows, and Android — combining local SQLite RAG, Groq & Gemini cloud routing, and a zero-key Cloudflare Worker relay.", 'amethyx');
+          } else {
+            reply('', "Feel free to ask a specific question about SchedSTI, Crystal Gems!, Amethyx AI, my skills, or my OJT status!", lastTopic);
+          }
+        } else {
+          appendLine("That isn't related to my works or portfolio.", 'warn');
+          appendLine("You can ask about my projects (SchedSTI, Crystal Gems!, Amethyx AI), skills, OJT status, GitHub (WaniBoogles), or email.", 'muted');
+        }
+
+        if (termScreen) {
+          termScreen.scrollTop = termScreen.scrollHeight;
+        }
+      };
+
+      if (termForm && termInput) {
+        termForm.addEventListener('submit', (e) => {
+          e.preventDefault();
+          runCommand(termInput.value);
+          termInput.value = '';
+        });
+
+        termInput.addEventListener('keydown', (e) => {
+          if (e.key === 'ArrowUp') {
+            if (!cmdHistory.length) return;
+            e.preventDefault();
+            historyIdx = Math.max(0, historyIdx - 1);
+            termInput.value = cmdHistory[historyIdx] || '';
+          } else if (e.key === 'ArrowDown') {
+            if (!cmdHistory.length) return;
+            e.preventDefault();
+            historyIdx = Math.min(cmdHistory.length, historyIdx + 1);
+            termInput.value = historyIdx < cmdHistory.length ? cmdHistory[historyIdx] : '';
+          } else if (e.key === 'Tab') {
+            const val = termInput.value.trim().toLowerCase();
+            if (!val) return;
+            const match = autoCommands.find((c) => c.startsWith(val));
+            if (match) {
+              e.preventDefault();
+              termInput.value = match;
+            }
+          }
+        });
+      }
+
+      if (termScreen && termInput) {
+        termScreen.addEventListener('click', () => termInput.focus());
+      }
+
+      document.querySelectorAll('.hint-cmd').forEach((btn) => {
+        btn.addEventListener('click', () => {
+          runCommand(btn.dataset.cmd || '');
+          if (termInput) termInput.focus();
+        });
+      });
+
+      // 2. Auto Cross-Fade Project Slideshow Windows (every 4s)
+      const lightbox = document.getElementById('lightbox');
+      const lbImg = document.getElementById('lightboxImg');
+      const lbTitle = document.getElementById('lightboxTitle');
+      const lbClose = document.getElementById('lightboxClose');
+
+      document.querySelectorAll('.slideshow-window').forEach((win) => {
+        const slides = Array.from(win.querySelectorAll('.slide-item'));
+        const dots = Array.from(win.querySelectorAll('.slide-dot'));
+        const captionEl = win.querySelector('.slide-caption');
+        const intervalMs = parseInt(win.dataset.interval || '4000', 10);
+        let current = 0;
+        let timer = null;
+
+        const showSlide = (idx) => {
+          current = (idx + slides.length) % slides.length;
+          slides.forEach((s, i) => s.classList.toggle('active', i === current));
+          dots.forEach((d, i) => d.classList.toggle('active', i === current));
+          if (captionEl && slides[current]) {
+            captionEl.textContent = slides[current].dataset.caption || '';
+          }
+        };
+
+        const startAuto = () => {
+          if (timer || slides.length < 2) return;
+          timer = setInterval(() => showSlide(current + 1), intervalMs);
+        };
+
+        const stopAuto = () => {
+          if (timer) {
+            clearInterval(timer);
+            timer = null;
+          }
+        };
+
+        dots.forEach((dot, i) => {
+          dot.addEventListener('click', (e) => {
+            e.stopPropagation();
+            showSlide(i);
+            stopAuto();
+            startAuto();
+          });
+        });
+
+        win.addEventListener('pointermove', (e) => {
+          const rect = win.getBoundingClientRect();
+          const rx = ((e.clientX - rect.left) / rect.width) * 100;
+          const ry = ((e.clientY - rect.top) / rect.height) * 100;
+          win.style.setProperty('--ox', rx.toFixed(1) + '%');
+          win.style.setProperty('--oy', ry.toFixed(1) + '%');
+        });
+
+        win.addEventListener('mouseenter', stopAuto);
+        win.addEventListener('mouseleave', () => {
+          win.style.setProperty('--ox', '50%');
+          win.style.setProperty('--oy', '50%');
+          startAuto();
+        });
+
+        win.addEventListener('click', () => {
+          const active = slides[current];
+          const img = active && active.querySelector('img');
+          if (!img || !lightbox) return;
+          lbImg.src = img.src;
+          lbImg.alt = img.alt;
+          lbTitle.textContent = active.dataset.caption || img.alt;
+          lightbox.classList.add('open');
+        });
+
+        startAuto();
+      });
+
+      const closeLightbox = () => lightbox && lightbox.classList.remove('open');
+      if (lbClose) lbClose.addEventListener('click', closeLightbox);
+      if (lightbox) {
+        lightbox.addEventListener('click', (e) => {
+          if (e.target === lightbox) closeLightbox();
+        });
+      }
+
+      // 3. Project Extended Details Modal (SchedSTI, Crystal Gems!, Amethyx AI)
+      const projectDetailsData = {
+        schedsti: {
+          title: 'SchedSTI — Project Overview',
+          overview: 'A standalone C# (.NET Framework) desktop scheduling system built for school operations, helping Admin/HR, Department Heads, and Faculty organize regular class schedules, avoid time/room conflicts, and view personal schedules cleanly across Windows and Linux Mint.',
+          features: [
+            ['Role-Based Access Workflow:', 'Dedicated views and permissions for Admin/HR, Department Heads, and Faculty members.'],
+            ['Conflict-Free Scheduling:', 'Structured regular schedule management that prevents overlapping time slots, instructors, and room assignments.'],
+            ['Auto-Responsive Desktop UI:', 'Built to scale cleanly across different desktop resolutions and cross-platform environments (Windows & Linux Mint).'],
+            ['Confidentiality by Design:', 'All portfolio previews replace real instructor names, subject codes, sections, and schedule times with sanitized placeholders.']
+          ],
+          note: 'Repository is private to protect school system internals.',
+          repo: ''
+        },
+        crystal: {
+          title: 'Crystal Gems! — Project Overview',
+          overview: 'A self-contained, offline 2D browser game inspired by Steven Universe and engineered to launch effortlessly on Linux Mint with a double-click — requiring zero external servers, installs, or dependencies.',
+          features: [
+            ['Zero-Install Offline Architecture:', 'Runs directly from local HTML5, CSS3, and JavaScript files in any modern browser on Linux Mint or Windows.'],
+            ['Custom Startup & Main Menu:', 'Features a themed startup splash sequence and a warm, mature menu interface tailored for smooth keyboard and mouse interaction.'],
+            ['Synthesized Web Audio:', 'Generates sound effects and background audio cues natively via the Web Audio API without external audio packages.'],
+            ['Playable Stage Maps:', 'Interactive stage selection map and 2D canvas gameplay with clean frame updates and state management.']
+          ],
+          note: 'Open-source fan-made project on GitHub.',
+          repo: 'https://github.com/WaniBoogles/Crystal-Gems-Fan-made-game-'
+        },
+        amethyx: {
+          title: 'Amethyx AI — Project Overview',
+          overview: 'Built from the ground up as a unified assistant running natively on Linux (GTK3/WebKit2), Windows (Amethyx.exe), and Android (Amethyx.apk / Amethyx-Public.apk). Designed for data privacy, isolated local memory, portability, and zero-key sharing via an encrypted Android vault (AES-256-GCM) and a 24/7 Cloudflare Worker relay.',
+          features: [
+            ['Data Privacy & Memory Isolation:', 'Per-user SQLite isolation (edan_memory.db) with Google OAuth 2.0 + PKCE account scoping, local chunked BM25 RAG knowledge base, and encrypted Android key vault (AES-256-GCM).'],
+            ['Hybrid AI Engine:', 'Automatic routing and failover between Groq (gpt-oss-120b, Whisper) and Google Gemini (gemini-3.6-flash) paired with topic-locked Wikipedia/DuckDuckGo web context.'],
+            ['Full Multimodal & Compact + Add Menu:', 'Streamlined + Add composer for multi-file attachments (.pdf, .docx, .pptx, .xlsx, code, photos, audio, video), camera capture, /imagine image generation, and 1-click file export (.md, .html, .pdf, .docx, .pptx).'],
+            ['Voice & Developer UX:', 'Live voice dictation with DC-offset filtering, offline Piper/Android TTS, syntax-highlighted code overview drawer with working 1-click download, offline LaTeX math, custom accent themes, and LAN PC–Android sync (/api/sync).'],
+            ['Zero-Key Public Sharing:', 'Amethyx-Public.apk connects through a PIN- and quota-protected server or Cloudflare Worker relay so others can use the models without ever accessing the owner\'s API keys.']
+          ],
+          note: 'Repository is currently private on GitHub (@WaniBoogles).',
+          repo: 'https://github.com/WaniBoogles/AmethyxAI'
+        }
+      };
+
+      const projModal = document.getElementById('projectDetailsModal');
+      const projModalTitle = document.getElementById('projModalTitle');
+      const projModalOverview = document.getElementById('projModalOverview');
+      const projModalFeatures = document.getElementById('projModalFeatures');
+      const projModalNote = document.getElementById('projModalNote');
+      const projModalRepo = document.getElementById('projModalRepo');
+      const projModalClose = document.getElementById('projModalClose');
+      const closeProjModal = () => projModal && projModal.classList.remove('open');
+
+      openProjectModalByKey = (key) => {
+        const item = projectDetailsData[key];
+        if (!item || !projModal) return;
+        projModalTitle.textContent = item.title;
+        projModalOverview.textContent = item.overview;
+        projModalFeatures.innerHTML = '';
+        item.features.forEach(([lead, desc]) => {
+          const li = document.createElement('li');
+          const strong = document.createElement('strong');
+          strong.textContent = lead + ' ';
+          li.appendChild(strong);
+          li.appendChild(document.createTextNode(desc));
+          projModalFeatures.appendChild(li);
+        });
+        projModalNote.textContent = item.note || '';
+        if (item.repo) {
+          projModalRepo.href = item.repo;
+          projModalRepo.style.display = 'inline-flex';
+        } else {
+          projModalRepo.style.display = 'none';
+        }
+        projModal.classList.add('open');
+      };
+
+      document.querySelectorAll('[data-project-details]').forEach((btn) => {
+        btn.addEventListener('click', () => openProjectModalByKey(btn.dataset.projectDetails));
+      });
+
+      if (projModalClose) projModalClose.addEventListener('click', closeProjModal);
+      if (projModal) {
+        projModal.addEventListener('click', (e) => {
+          if (e.target === projModal) closeProjModal();
+        });
+      }
+
+      // 4. Language, Technology & Soft Skill Overview Modal
+      const infoCatalog = {
+        csharp: {
+          name: 'C#',
+          cat: 'Programming Language · Object-Oriented',
+          icon: 'assets/icons/csharp.svg',
+          desc: 'A modern, strongly-typed object-oriented language developed by Microsoft, widely used for desktop applications, enterprise software, and backend services.',
+          usage: 'Used as the core language behind SchedSTI to structure role-based access, conflict-checked scheduling workflows, and maintainable OOP classes.'
+        },
+        dotnet: {
+          name: '.NET Framework',
+          cat: 'Desktop & Application Platform',
+          icon: 'assets/icons/dotnet.svg',
+          desc: 'A mature software development framework providing rich UI controls, strong type safety, and system libraries for building reliable desktop software.',
+          usage: 'Powers SchedSTI\'s standalone desktop interface, form layouts, and responsive scaling across Windows and Linux Mint.'
+        },
+        html5: {
+          name: 'HTML5',
+          cat: 'Web Markup & Structure',
+          icon: 'assets/icons/html5.svg',
+          desc: 'The standard semantic markup language for structuring web pages, interactive applications, multimedia, and 2D Canvas experiences.',
+          usage: 'Used to structure Crystal Gems!, the Amethyx AI cross-platform UI, and this portfolio with clean semantics and accessible controls.'
+        },
+        css3: {
+          name: 'CSS3',
+          cat: 'Styling & Responsive Design',
+          icon: 'assets/icons/css3.svg',
+          desc: 'The styling language of the web, enabling Flexbox/Grid layouts, custom dark themes, smooth transitions, and responsive breakpoints.',
+          usage: 'Used across this portfolio, Crystal Gems!, and Amethyx AI to craft minimalist dark-purple themes that adapt cleanly to desktop and mobile screens.'
+        },
+        javascript: {
+          name: 'JavaScript',
+          cat: 'Web & UI Scripting Language',
+          icon: 'assets/icons/javascript.svg',
+          desc: 'The core programming language of the browser for interactive interfaces, asynchronous API calls, Canvas rendering, and real-time DOM updates.',
+          usage: 'Drives Crystal Gems! gameplay and Web Audio synthesis, Amethyx AI\'s live chat/multimodal client, and this portfolio\'s Edan Terminal and slideshows.'
+        },
+        python: {
+          name: 'Python',
+          cat: 'Scripting & Backend Language',
+          icon: 'assets/icons/python.svg',
+          desc: 'A readable, versatile programming language prized for rapid automation, data handling, AI integrations, and lightweight local servers.',
+          usage: 'Powers Amethyx AI\'s local backend, SQLite chunked RAG memory, document parsing, and Groq/Gemini cloud routing alongside everyday scripting.'
+        },
+        java: {
+          name: 'Java (Core OOP)',
+          cat: 'Object-Oriented Language',
+          icon: 'assets/icons/java.svg',
+          desc: 'A portable, class-based OOP language known for strong architecture, cross-platform execution, and native Android development.',
+          usage: 'Grounded through Oracle Java Fundamentals, UML-driven 2D event-driven game development, and native Android integration in Amethyx AI.'
+        },
+        'java-android': {
+          name: 'Java (Android)',
+          cat: 'Mobile Development',
+          icon: 'assets/icons/java.svg',
+          desc: 'Native Android application development using Java for WebView bridges, secure local storage, hardware permissions, and APK packaging.',
+          usage: 'Used to build Amethyx.apk and Amethyx-Public.apk with an AES-256-GCM encrypted key vault, microphone dictation bridge, and LAN/relay connectivity.'
+        },
+        sqlite: {
+          name: 'SQLite',
+          cat: 'Embedded Relational Database',
+          icon: 'assets/icons/sqlite.svg',
+          desc: 'A lightweight, zero-configuration, file-based SQL database engine ideal for local storage, fast search, and portable offline-first apps.',
+          usage: 'Stores Amethyx AI\'s local chat history, saved notes, and chunked RAG knowledge base without needing an external database server.'
+        },
+        cloudflare: {
+          name: 'Cloudflare Workers',
+          cat: 'Serverless Edge Runtime',
+          icon: 'assets/icons/cloudflare.svg',
+          desc: 'A globally distributed serverless JavaScript runtime at the edge, ideal for low-latency API relays, authentication checks, and rate limiting.',
+          usage: 'Hosts Amethyx AI\'s 24/7 zero-key public relay with PIN protection and usage quotas so Amethyx-Public.apk works safely without exposing API keys.'
+        },
+        linux: {
+          name: 'Linux',
+          cat: 'Operating System & CLI',
+          icon: 'assets/icons/linux.svg',
+          desc: 'An open-source operating system family powering developer workstations, servers, and cloud infrastructure with powerful CLI tooling.',
+          usage: 'My daily environment (Linux Mint & Ubuntu) for Bash/CLI workflows, cross-platform app testing, GTK3/WebKit2 builds, and double-clickable web apps.'
+        },
+        sap: {
+          name: 'SAP S/4HANA',
+          cat: 'Enterprise ERP Fundamentals',
+          icon: 'assets/icons/sap.svg',
+          desc: 'SAP\'s modern enterprise resource planning (ERP) suite connecting finance, logistics, HR, and core business processes in real time.',
+          usage: 'Studied through BSIT coursework and school training to understand how enterprise logic, structured data flows, and organizational roles connect.'
+        },
+        github: {
+          name: 'GitHub',
+          cat: 'Version Control & Collaboration',
+          icon: 'assets/icons/github.svg',
+          desc: 'A Git-based code hosting platform for tracking revisions, managing public and private repositories, and collaborating on software projects.',
+          usage: 'Used under @WaniBoogles to manage source history, releases, and documentation for Amethyx AI, Crystal Gems!, and private academic builds.'
+        },
+        'soft-logic': {
+          name: 'Analytical Thinking',
+          cat: 'Soft Skill · Logical Problem-Solving',
+          icon: 'assets/icons/soft-logic.svg',
+          desc: 'The ability to examine a problem systematically, isolate root causes, compare trade-offs, and design structured solutions before jumping into code.',
+          usage: 'Helps me debug cross-platform edge cases, design conflict-free scheduling rules in SchedSTI, and structure clean RAG/API routing in Amethyx AI.'
+        },
+        'soft-team': {
+          name: 'Team Collaboration',
+          cat: 'Soft Skill · Open Communication',
+          icon: 'assets/icons/soft-team.svg',
+          desc: 'Working constructively with teammates by communicating progress clearly, asking direct questions when blocked, and welcoming code or design feedback.',
+          usage: 'I keep discussions practical, respectful, and transparent so everyone stays aligned on requirements, timelines, and shared deliverables.'
+        },
+        'soft-adapt': {
+          name: 'Adaptability',
+          cat: 'Soft Skill · Eager to Learn New Tech',
+          icon: 'assets/icons/soft-adapt.svg',
+          desc: 'Staying calm and effective when requirements change, switching between tools or operating systems, and quickly learning unfamiliar stacks.',
+          usage: 'Enabled me to move comfortably across C#/.NET, HTML5/JS, Python, Android Java, Linux Mint, Windows, and Cloudflare Workers as each project demanded.'
+        },
+        'soft-time': {
+          name: 'Time Management',
+          cat: 'Soft Skill · Attention to Detail',
+          icon: 'assets/icons/soft-time.svg',
+          desc: 'Balancing priorities, breaking work into achievable milestones, and keeping details clean so projects finish reliably without last-minute chaos.',
+          usage: 'Keeps my academic deadlines, UI refinements, and multi-platform builds organized while still leaving time to test and polish edge cases.'
+        },
+        'soft-empathy': {
+          name: 'Empathy',
+          cat: 'Soft Skill · User-Centered Mindset',
+          icon: 'assets/icons/soft-empathy.svg',
+          desc: 'Putting yourself in the shoes of end-users and teammates — understanding their frustrations, privacy concerns, and everyday workflows.',
+          usage: 'Guides how I design clear interfaces, hide confidential school data in public previews, and build tools that feel comfortable and human to use.'
+        }
+      };
+
+      const infoModal = document.getElementById('infoModal');
+      const infoModalTitle = document.getElementById('infoModalTitle');
+      const infoModalImg = document.getElementById('infoModalImg');
+      const infoModalName = document.getElementById('infoModalName');
+      const infoModalCat = document.getElementById('infoModalCat');
+      const infoModalDesc = document.getElementById('infoModalDesc');
+      const infoModalUsage = document.getElementById('infoModalUsage');
+      const infoModalClose = document.getElementById('infoModalClose');
+      const closeInfoModal = () => infoModal && infoModal.classList.remove('open');
+
+      document.querySelectorAll('[data-info]').forEach((trigger) => {
+        trigger.addEventListener('click', () => {
+          const entry = infoCatalog[trigger.dataset.info];
+          if (!entry || !infoModal) return;
+          infoModalTitle.textContent = entry.name + ' — Overview';
+          infoModalImg.src = entry.icon;
+          infoModalImg.alt = entry.name + ' icon';
+          infoModalName.textContent = entry.name;
+          infoModalCat.textContent = entry.cat;
+          infoModalDesc.textContent = entry.desc;
+          infoModalUsage.textContent = entry.usage;
+          infoModal.classList.add('open');
+        });
+      });
+
+      if (infoModalClose) infoModalClose.addEventListener('click', closeInfoModal);
+      if (infoModal) {
+        infoModal.addEventListener('click', (e) => {
+          if (e.target === infoModal) closeInfoModal();
+        });
+      }
+
+      // 5. 1-Click Copy Email Button (works on HTTPS and local file://)
+      const copyEmailBtn = document.getElementById('copyEmailBtn');
+      const copyEmailLabel = document.getElementById('copyEmailLabel');
+      if (copyEmailBtn && copyEmailLabel) {
+        let copyTimer = null;
+        copyEmailBtn.addEventListener('click', async () => {
+          const email = copyEmailBtn.dataset.email || 'rhonyuane@gmail.com';
+          let ok = false;
+          if (navigator.clipboard && navigator.clipboard.writeText) {
+            try {
+              await navigator.clipboard.writeText(email);
+              ok = true;
+            } catch (_) {}
+          }
+          if (!ok) {
+            const ta = document.createElement('textarea');
+            ta.value = email;
+            ta.style.position = 'fixed';
+            ta.style.opacity = '0';
+            document.body.appendChild(ta);
+            ta.select();
+            try { ok = document.execCommand('copy'); } catch (_) {}
+            ta.remove();
+          }
+          if (ok) {
+            copyEmailBtn.classList.add('copied');
+            copyEmailLabel.textContent = 'Copied!';
+            clearTimeout(copyTimer);
+            copyTimer = setTimeout(() => {
+              copyEmailBtn.classList.remove('copied');
+              copyEmailLabel.textContent = 'Copy Email';
+            }, 2200);
+          }
+        });
+      }
+
+      window.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          closeLightbox();
+          closeProjModal();
+          closeInfoModal();
+        }
+      });
+    })();
+  </script>
+</body>
+</html>
