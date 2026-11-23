@@ -962,6 +962,31 @@ h1, h2, h3, p, span, a, figure, figcaption, img, button, article, div, section {
   flex-shrink: 0;
 }
 
+.project-link-btn svg.link-ico,
+.btn-ui svg.ext-arrow {
+  width: 13px;
+  height: 13px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 1.9;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  flex-shrink: 0;
+  opacity: 0.82;
+}
+
+.project-link-btn.primary {
+  background: var(--purple);
+  border-color: var(--purple-mid);
+  color: #ffffff;
+}
+
+.project-link-btn.primary:hover {
+  background: var(--purple-mid);
+  border-color: var(--purple-soft);
+  color: #ffffff;
+}
+
 /* ==========================================================================
    SKILLS — SEPARATE LININGS FOR TECHNICAL & SOFT SKILLS WITH BASIS LABELS
    ========================================================================== */
@@ -997,8 +1022,8 @@ h1, h2, h3, p, span, a, figure, figcaption, img, button, article, div, section {
 }
 
 .toolkit-grid.soft-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 12px;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 10px;
 }
 
 .toolkit-card {
@@ -1359,6 +1384,50 @@ h1, h2, h3, p, span, a, figure, figcaption, img, button, article, div, section {
   flex-shrink: 0;
 }
 
+/* Floating Back-to-Top Pill */
+.back-to-top {
+  position: fixed;
+  right: 22px;
+  bottom: 22px;
+  z-index: 60;
+  width: 42px;
+  height: 42px;
+  border-radius: 999px;
+  background: rgba(26, 21, 36, 0.94);
+  border: 1px solid rgba(168, 85, 247, 0.45);
+  color: var(--purple-soft);
+  display: grid;
+  place-items: center;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(10px);
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.45);
+  transition: opacity 0.22s ease, transform 0.22s var(--ease), visibility 0.22s ease, background-color 0.18s ease, color 0.18s ease, border-color 0.18s ease;
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.back-to-top:hover {
+  background: var(--purple);
+  border-color: var(--purple-soft);
+  color: #ffffff;
+}
+
+.back-to-top svg {
+  width: 18px;
+  height: 18px;
+  stroke: currentColor;
+  fill: none;
+  stroke-width: 2.1;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
 /* ==========================================================================
    RESPONSIVE — TABLET & ANDROID MOBILE
    ========================================================================== */
@@ -1504,18 +1573,30 @@ h1, h2, h3, p, span, a, figure, figcaption, img, button, article, div, section {
     height: 48px;
   }
 
+  .term-input-row {
+    gap: 2px;
+    font-size: 0.74rem;
+  }
+
   .term-input {
     min-width: 0;
-    font-size: 14px;
+    font-size: 0.78rem;
   }
 
   .terminal-hints {
-    padding: 8px 10px;
+    padding: 9px 12px;
     gap: 6px;
+    align-items: center;
+  }
+
+  .hint-label {
+    width: 100%;
+    margin-bottom: 2px;
+    font-size: 0.7rem;
   }
 
   .hint-cmd {
-    padding: 4px 8px;
+    padding: 4px 9px;
     font-size: 0.72rem;
   }
 
@@ -1526,7 +1607,12 @@ h1, h2, h3, p, span, a, figure, figcaption, img, button, article, div, section {
   }
 
   .section-block {
-    padding: 36px 0;
+    margin-top: 36px;
+    padding: 12px 0;
+  }
+
+  .section-head {
+    margin-bottom: 18px;
   }
 
   .section-title,
@@ -1574,14 +1660,19 @@ h1, h2, h3, p, span, a, figure, figcaption, img, button, article, div, section {
 
   .project-links {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    grid-template-columns: 1fr 1fr;
     gap: 8px;
     margin-top: 14px;
   }
 
+  .project-links .project-link-btn.primary,
+  .project-links .project-link-btn:only-child {
+    grid-column: 1 / -1;
+  }
+
   .project-link-btn {
     justify-content: center;
-    padding: 8px 12px;
+    padding: 9px 12px;
   }
 
   .toolkit-grid,
@@ -1597,6 +1688,8 @@ h1, h2, h3, p, span, a, figure, figcaption, img, button, article, div, section {
   .contact-box {
     padding: 20px 16px;
     gap: 16px;
+    text-align: center;
+    align-items: center;
   }
 
   .contact-actions {
@@ -1615,6 +1708,13 @@ h1, h2, h3, p, span, a, figure, figcaption, img, button, article, div, section {
   .contact-actions .btn-ui.primary,
   #copyEmailBtn {
     grid-column: 1 / -1;
+  }
+
+  .back-to-top {
+    right: 16px;
+    bottom: 18px;
+    width: 40px;
+    height: 40px;
   }
 
   .lightbox {
@@ -1710,10 +1810,12 @@ h1, h2, h3, p, span, a, figure, figcaption, img, button, article, div, section {
           <a href="https://github.com/WaniBoogles" target="_blank" rel="noopener noreferrer" class="btn-ui">
             <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBmaWxsPSIjRjNGNEY2IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02NCAxNGE1MCA1MCAwIDAgMC0xNiA5N2MyIC41IDMtMSAzLTJ2LTljLTE0IDMtMTctNi0xNy02LTItNi02LTctNi03LTUtMyAwLTMgMC0zIDUgMCA4IDUgOCA1IDUgOCAxMiA2IDE1IDQgLjUtMyAyLTYgMy03LTExLTEtMjMtNS0yMy0yNCAwLTYgMi0xMCA1LTE0IDAtMS0yLTYgMS0xMyAwIDAgNC0xIDE0IDVhNDggNDggMCAwIDEgMjYgMGMxMC02IDE0LTUgMTQtNSAzIDcgMSAxMiAxIDEzIDMgNCA1IDggNSAxNCAwIDE5LTEyIDIzLTIzIDI0IDIgMSA0IDUgNCA5djE0YzAgMSAxIDIuNSAzIDJBNTAgNTAgMCAwIDAgNjQgMTR6Ii8+PC9zdmc+" alt="" class="btn-icon">
             <span>WaniBoogles</span>
+            <svg viewBox="0 0 16 16" class="ext-arrow" aria-hidden="true"><path d="M5 11L11 5M6.5 5H11v4.5"/></svg>
           </a>
           <a href="https://www.linkedin.com/in/rhon-yuan-edan-63069736b" target="_blank" rel="noopener noreferrer" class="btn-ui">
             <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSI+CiAgPHJlY3QgeD0iMiIgeT0iMiIgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiByeD0iNCIgZmlsbD0iIzBBNjZDMiIvPgogIDxwYXRoIGQ9Ik03LjUgMTAuMlYxNy4yTTcuNSA2LjhWNy4xTTExLjIgMTcuMlYxMC4yTTExLjIgMTIuNkMxMS4yIDExLjEgMTIuMyAxMC4yIDEzLjcgMTAuMkMxNS4yIDEwLjIgMTYuNSAxMS4yIDE2LjUgMTNWMTcuMiIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K" alt="" class="btn-icon">
             <span>LinkedIn</span>
+            <svg viewBox="0 0 16 16" class="ext-arrow" aria-hidden="true"><path d="M5 11L11 5M6.5 5H11v4.5"/></svg>
           </a>
         </div>
       </div>
@@ -1777,6 +1879,7 @@ h1, h2, h3, p, span, a, figure, figcaption, img, button, article, div, section {
           <div class="terminal-hints no-select">
             <span class="hint-label">Quick commands:</span>
             <button type="button" class="hint-cmd" data-cmd="creation">creation</button>
+            <button type="button" class="hint-cmd" data-cmd="amethyx">amethyx</button>
             <button type="button" class="hint-cmd" data-cmd="skills">skills</button>
             <button type="button" class="hint-cmd" data-cmd="github">github</button>
             <button type="button" class="hint-cmd" data-cmd="linkedin">linkedin</button>
@@ -1848,8 +1951,10 @@ h1, h2, h3, p, span, a, figure, figcaption, img, button, article, div, section {
               <a href="https://github.com/WaniBoogles/AmethyxAI" target="_blank" rel="noopener noreferrer" class="project-link-btn">
                 <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBmaWxsPSIjRjNGNEY2IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02NCAxNGE1MCA1MCAwIDAgMC0xNiA5N2MyIC41IDMtMSAzLTJ2LTljLTE0IDMtMTctNi0xNy02LTItNi02LTctNi03LTUtMyAwLTMgMC0zIDUgMCA4IDUgOCA1IDUgOCAxMiA2IDE1IDQgLjUtMyAyLTYgMy03LTExLTEtMjMtNS0yMy0yNCAwLTYgMi0xMCA1LTE0IDAtMS0yLTYgMS0xMyAwIDAgNC0xIDE0IDVhNDggNDggMCAwIDEgMjYgMGMxMC02IDE0LTUgMTQtNSAzIDcgMSAxMiAxIDEzIDMgNCA1IDggNSAxNCAwIDE5LTEyIDIzLTIzIDI0IDIgMSA0IDUgNCA5djE0YzAgMSAxIDIuNSAzIDJBNTAgNTAgMCAwIDAgNjQgMTR6Ii8+PC9zdmc+" alt="">
                 <span>GitHub Repo</span>
+                <svg viewBox="0 0 16 16" class="link-ico" aria-hidden="true"><path d="M5 11L11 5M6.5 5H11v4.5"/></svg>
               </a>
               <button type="button" class="project-link-btn" data-project-details="amethyx">
+                <svg viewBox="0 0 16 16" class="link-ico" aria-hidden="true"><circle cx="8" cy="8" r="6"/><line x1="8" y1="7.2" x2="8" y2="11"/><circle cx="8" cy="5" r="0.6" fill="currentColor" stroke="none"/></svg>
                 <span>View Details</span>
               </button>
             </div>
@@ -1892,6 +1997,7 @@ h1, h2, h3, p, span, a, figure, figcaption, img, button, article, div, section {
             </div>
             <div class="project-links">
               <button type="button" class="project-link-btn" data-project-details="schedsti">
+                <svg viewBox="0 0 16 16" class="link-ico" aria-hidden="true"><circle cx="8" cy="8" r="6"/><line x1="8" y1="7.2" x2="8" y2="11"/><circle cx="8" cy="5" r="0.6" fill="currentColor" stroke="none"/></svg>
                 <span>View Details</span>
               </button>
             </div>
@@ -1934,11 +2040,18 @@ h1, h2, h3, p, span, a, figure, figcaption, img, button, article, div, section {
               <button type="button" class="lang-tag" data-info="javascript"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij4KICA8cmVjdCB3aWR0aD0iMTI4IiBoZWlnaHQ9IjEyOCIgcng9IjE0IiBmaWxsPSIjRjdERjFFIi8+CiAgPHBhdGggZmlsbD0iIzExMTExMSIgZD0iTTcyIDk5YzMgNSA3IDkgMTQgOSA2IDAgMTAtMyAxMC03IDAtNS00LTctMTEtMTBsLTQtMmMtMTEtNC0xOC0xMC0xOC0yMiAwLTExIDgtMTkgMjEtMTkgOSAwIDE2IDMgMjAgMTFsLTExIDdjLTItNC01LTYtOS02LTQgMC03IDMtNyA2IDAgNCAzIDYgOSA5bDQgMmMxMyA1IDIwIDExIDIwIDIzIDAgMTMtMTAgMjAtMjQgMjAtMTMgMC0yMi02LTI2LTE1em0tMzggMWMyIDQgNCA3IDkgNyA0IDAgNy0yIDctOVY0OWgxNHY0OWMwIDE1LTkgMjItMjEgMjItMTEgMC0xOC02LTIxLTEzeiIvPgo8L3N2Zz4K" alt="">JavaScript</button>
             </div>
             <div class="project-links">
+              <a href="https://waniboogles.github.io/Crystal-Gems-Fan-made-game-/build/Crystal-Gems.html" target="_blank" rel="noopener noreferrer" class="project-link-btn primary">
+                <svg viewBox="0 0 16 16" class="link-ico" aria-hidden="true"><polygon points="5,3.5 13,8 5,12.5" fill="currentColor" stroke="none"/></svg>
+                <span>Play Online</span>
+                <svg viewBox="0 0 16 16" class="link-ico" aria-hidden="true"><path d="M5 11L11 5M6.5 5H11v4.5"/></svg>
+              </a>
               <a href="https://github.com/WaniBoogles/Crystal-Gems-Fan-made-game-" target="_blank" rel="noopener noreferrer" class="project-link-btn">
                 <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBmaWxsPSIjRjNGNEY2IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02NCAxNGE1MCA1MCAwIDAgMC0xNiA5N2MyIC41IDMtMSAzLTJ2LTljLTE0IDMtMTctNi0xNy02LTItNi02LTctNi03LTUtMyAwLTMgMC0zIDUgMCA4IDUgOCA1IDUgOCAxMiA2IDE1IDQgLjUtMyAyLTYgMy03LTExLTEtMjMtNS0yMy0yNCAwLTYgMi0xMCA1LTE0IDAtMS0yLTYgMS0xMyAwIDAgNC0xIDE0IDVhNDggNDggMCAwIDEgMjYgMGMxMC02IDE0LTUgMTQtNSAzIDcgMSAxMiAxIDEzIDMgNCA1IDggNSAxNCAwIDE5LTEyIDIzLTIzIDI0IDIgMSA0IDUgNCA5djE0YzAgMSAxIDIuNSAzIDJBNTAgNTAgMCAwIDAgNjQgMTR6Ii8+PC9zdmc+" alt="">
                 <span>GitHub Repo</span>
+                <svg viewBox="0 0 16 16" class="link-ico" aria-hidden="true"><path d="M5 11L11 5M6.5 5H11v4.5"/></svg>
               </a>
               <button type="button" class="project-link-btn" data-project-details="crystal">
+                <svg viewBox="0 0 16 16" class="link-ico" aria-hidden="true"><circle cx="8" cy="8" r="6"/><line x1="8" y1="7.2" x2="8" y2="11"/><circle cx="8" cy="5" r="0.6" fill="currentColor" stroke="none"/></svg>
                 <span>View Details</span>
               </button>
             </div>
@@ -2163,10 +2276,12 @@ h1, h2, h3, p, span, a, figure, figcaption, img, button, article, div, section {
           <a href="https://github.com/WaniBoogles" target="_blank" rel="noopener noreferrer" class="btn-ui">
             <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBmaWxsPSIjRjNGNEY2IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGQ9Ik02NCAxNGE1MCA1MCAwIDAgMC0xNiA5N2MyIC41IDMtMSAzLTJ2LTljLTE0IDMtMTctNi0xNy02LTItNi02LTctNi03LTUtMyAwLTMgMC0zIDUgMCA4IDUgOCA1IDUgOCAxMiA2IDE1IDQgLjUtMyAyLTYgMy03LTExLTEtMjMtNS0yMy0yNCAwLTYgMi0xMCA1LTE0IDAtMS0yLTYgMS0xMyAwIDAgNC0xIDE0IDVhNDggNDggMCAwIDEgMjYgMGMxMC02IDE0LTUgMTQtNSAzIDcgMSAxMiAxIDEzIDMgNCA1IDggNSAxNCAwIDE5LTEyIDIzLTIzIDI0IDIgMSA0IDUgNCA5djE0YzAgMSAxIDIuNSAzIDJBNTAgNTAgMCAwIDAgNjQgMTR6Ii8+PC9zdmc+" alt="" class="btn-icon">
             <span>GitHub: WaniBoogles</span>
+            <svg viewBox="0 0 16 16" class="ext-arrow" aria-hidden="true"><path d="M5 11L11 5M6.5 5H11v4.5"/></svg>
           </a>
           <a href="https://www.linkedin.com/in/rhon-yuan-edan-63069736b" target="_blank" rel="noopener noreferrer" class="btn-ui">
             <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSI+CiAgPHJlY3QgeD0iMiIgeT0iMiIgd2lkdGg9IjIwIiBoZWlnaHQ9IjIwIiByeD0iNCIgZmlsbD0iIzBBNjZDMiIvPgogIDxwYXRoIGQ9Ik03LjUgMTAuMlYxNy4yTTcuNSA2LjhWNy4xTTExLjIgMTcuMlYxMC4yTTExLjIgMTIuNkMxMS4yIDExLjEgMTIuMyAxMC4yIDEzLjcgMTAuMkMxNS4yIDEwLjIgMTYuNSAxMS4yIDE2LjUgMTNWMTcuMiIgc3Ryb2tlPSIjRkZGRkZGIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZS1saW5lY2FwPSJyb3VuZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIvPgo8L3N2Zz4K" alt="" class="btn-icon">
             <span>LinkedIn</span>
+            <svg viewBox="0 0 16 16" class="ext-arrow" aria-hidden="true"><path d="M5 11L11 5M6.5 5H11v4.5"/></svg>
           </a>
           <button type="button" class="btn-ui" id="copyEmailBtn" data-email="rhonyuane@gmail.com">
             <svg viewBox="0 0 24 24" class="btn-icon" aria-hidden="true">
@@ -2184,6 +2299,11 @@ h1, h2, h3, p, span, a, figure, figcaption, img, button, article, div, section {
       </footer>
     </section>
   </main>
+
+  <!-- Floating Back-to-Top Pill -->
+  <button type="button" class="back-to-top no-select" id="backToTopBtn" title="Back to top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
 
   <!-- Full-size Screenshot Modal -->
   <div class="lightbox no-select" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle">
@@ -3030,6 +3150,19 @@ h1, h2, h3, p, span, a, figure, figcaption, img, button, article, div, section {
               copyEmailLabel.textContent = 'Copy Email';
             }, 2200);
           }
+        });
+      }
+
+      // 6. Floating Back-to-Top Button
+      const backToTopBtn = document.getElementById('backToTopBtn');
+      if (backToTopBtn) {
+        const toggleBackToTop = () => {
+          backToTopBtn.classList.toggle('visible', window.scrollY > 420);
+        };
+        window.addEventListener('scroll', toggleBackToTop, { passive: true });
+        toggleBackToTop();
+        backToTopBtn.addEventListener('click', () => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
         });
       }
 

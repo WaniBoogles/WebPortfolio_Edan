@@ -68,10 +68,12 @@
           <a href="https://github.com/WaniBoogles" target="_blank" rel="noopener noreferrer" class="btn-ui">
             <img src="assets/icons/github.svg" alt="" class="btn-icon">
             <span>WaniBoogles</span>
+            <svg viewBox="0 0 16 16" class="ext-arrow" aria-hidden="true"><path d="M5 11L11 5M6.5 5H11v4.5"/></svg>
           </a>
           <a href="https://www.linkedin.com/in/rhon-yuan-edan-63069736b" target="_blank" rel="noopener noreferrer" class="btn-ui">
             <img src="assets/icons/linkedin.svg" alt="" class="btn-icon">
             <span>LinkedIn</span>
+            <svg viewBox="0 0 16 16" class="ext-arrow" aria-hidden="true"><path d="M5 11L11 5M6.5 5H11v4.5"/></svg>
           </a>
         </div>
       </div>
@@ -135,6 +137,7 @@
           <div class="terminal-hints no-select">
             <span class="hint-label">Quick commands:</span>
             <button type="button" class="hint-cmd" data-cmd="creation">creation</button>
+            <button type="button" class="hint-cmd" data-cmd="amethyx">amethyx</button>
             <button type="button" class="hint-cmd" data-cmd="skills">skills</button>
             <button type="button" class="hint-cmd" data-cmd="github">github</button>
             <button type="button" class="hint-cmd" data-cmd="linkedin">linkedin</button>
@@ -206,8 +209,10 @@
               <a href="https://github.com/WaniBoogles/AmethyxAI" target="_blank" rel="noopener noreferrer" class="project-link-btn">
                 <img src="assets/icons/github.svg" alt="">
                 <span>GitHub Repo</span>
+                <svg viewBox="0 0 16 16" class="link-ico" aria-hidden="true"><path d="M5 11L11 5M6.5 5H11v4.5"/></svg>
               </a>
               <button type="button" class="project-link-btn" data-project-details="amethyx">
+                <svg viewBox="0 0 16 16" class="link-ico" aria-hidden="true"><circle cx="8" cy="8" r="6"/><line x1="8" y1="7.2" x2="8" y2="11"/><circle cx="8" cy="5" r="0.6" fill="currentColor" stroke="none"/></svg>
                 <span>View Details</span>
               </button>
             </div>
@@ -250,6 +255,7 @@
             </div>
             <div class="project-links">
               <button type="button" class="project-link-btn" data-project-details="schedsti">
+                <svg viewBox="0 0 16 16" class="link-ico" aria-hidden="true"><circle cx="8" cy="8" r="6"/><line x1="8" y1="7.2" x2="8" y2="11"/><circle cx="8" cy="5" r="0.6" fill="currentColor" stroke="none"/></svg>
                 <span>View Details</span>
               </button>
             </div>
@@ -292,11 +298,18 @@
               <button type="button" class="lang-tag" data-info="javascript"><img src="assets/icons/javascript.svg" alt="">JavaScript</button>
             </div>
             <div class="project-links">
+              <a href="https://waniboogles.github.io/Crystal-Gems-Fan-made-game-/build/Crystal-Gems.html" target="_blank" rel="noopener noreferrer" class="project-link-btn primary">
+                <svg viewBox="0 0 16 16" class="link-ico" aria-hidden="true"><polygon points="5,3.5 13,8 5,12.5" fill="currentColor" stroke="none"/></svg>
+                <span>Play Online</span>
+                <svg viewBox="0 0 16 16" class="link-ico" aria-hidden="true"><path d="M5 11L11 5M6.5 5H11v4.5"/></svg>
+              </a>
               <a href="https://github.com/WaniBoogles/Crystal-Gems-Fan-made-game-" target="_blank" rel="noopener noreferrer" class="project-link-btn">
                 <img src="assets/icons/github.svg" alt="">
                 <span>GitHub Repo</span>
+                <svg viewBox="0 0 16 16" class="link-ico" aria-hidden="true"><path d="M5 11L11 5M6.5 5H11v4.5"/></svg>
               </a>
               <button type="button" class="project-link-btn" data-project-details="crystal">
+                <svg viewBox="0 0 16 16" class="link-ico" aria-hidden="true"><circle cx="8" cy="8" r="6"/><line x1="8" y1="7.2" x2="8" y2="11"/><circle cx="8" cy="5" r="0.6" fill="currentColor" stroke="none"/></svg>
                 <span>View Details</span>
               </button>
             </div>
@@ -521,10 +534,12 @@
           <a href="https://github.com/WaniBoogles" target="_blank" rel="noopener noreferrer" class="btn-ui">
             <img src="assets/icons/github.svg" alt="" class="btn-icon">
             <span>GitHub: WaniBoogles</span>
+            <svg viewBox="0 0 16 16" class="ext-arrow" aria-hidden="true"><path d="M5 11L11 5M6.5 5H11v4.5"/></svg>
           </a>
           <a href="https://www.linkedin.com/in/rhon-yuan-edan-63069736b" target="_blank" rel="noopener noreferrer" class="btn-ui">
             <img src="assets/icons/linkedin.svg" alt="" class="btn-icon">
             <span>LinkedIn</span>
+            <svg viewBox="0 0 16 16" class="ext-arrow" aria-hidden="true"><path d="M5 11L11 5M6.5 5H11v4.5"/></svg>
           </a>
           <button type="button" class="btn-ui" id="copyEmailBtn" data-email="rhonyuane@gmail.com">
             <svg viewBox="0 0 24 24" class="btn-icon" aria-hidden="true">
@@ -542,6 +557,11 @@
       </footer>
     </section>
   </main>
+
+  <!-- Floating Back-to-Top Pill -->
+  <button type="button" class="back-to-top no-select" id="backToTopBtn" title="Back to top" aria-label="Back to top">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
 
   <!-- Full-size Screenshot Modal -->
   <div class="lightbox no-select" id="lightbox" role="dialog" aria-modal="true" aria-labelledby="lightboxTitle">
@@ -1388,6 +1408,19 @@
               copyEmailLabel.textContent = 'Copy Email';
             }, 2200);
           }
+        });
+      }
+
+      // 6. Floating Back-to-Top Button
+      const backToTopBtn = document.getElementById('backToTopBtn');
+      if (backToTopBtn) {
+        const toggleBackToTop = () => {
+          backToTopBtn.classList.toggle('visible', window.scrollY > 420);
+        };
+        window.addEventListener('scroll', toggleBackToTop, { passive: true });
+        toggleBackToTop();
+        backToTopBtn.addEventListener('click', () => {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
         });
       }
 
