@@ -193,26 +193,26 @@
     } else if (hasAny(q, ['you good', 'how are you', 'how r u', 'hows it going', "how's it going", 'doing good', 'whats up', "what's up", 'kamusta'])) {
       reply('Status:', "I'm doing good, thank you for asking! Always ready to share my works or talk about an IT / Software Intern role.", 'about');
     } else if (hasAny(q, ['professional', 'work ethic', 'reliable', 'disciplined', 'serious', 'organized'])) {
-      reply('Work Ethic:', "I keep my work organized, attentive to detail, and reliable — I take deadlines, clean structure, and clear communication seriously while keeping a warm, approachable attitude.", 'soft');
+      reply('Work Ethic:', "I keep my work organized, pay close attention to details, and stay reliable. I take deadlines, clean code structure, and clear communication seriously while keeping an approachable attitude.", 'soft');
     } else if (hasAny(q, ['hire', 'why should', 'why pick', 'choose you', 'bring to the team', 'value'])) {
-      reply('What I Bring:', "I combine OOP and responsive front-end foundations with practical cross-platform testing on Linux and Windows — plus I'm adaptable, eager to learn quickly, and focused on building tools people can actually use comfortably.", 'about');
+      reply('What I Bring:', "I combine OOP and responsive front-end foundations with practical testing across Linux and Windows. I'm also adaptable, quick to learn, and focused on building tools that are comfortable for people to use.", 'about');
     } else if (hasAny(q, ['weakness', 'struggle', 'still learning', 'improve', 'challenge'])) {
-      reply('Growth Area:', "Since I'm still a 4th-year BSIT student without formal industry experience yet, I'm actively sharpening my real-world engineering workflows and always welcome constructive feedback.", 'ojt');
+      reply('Growth Area:', "Since I'm still a 4th-year BSIT student without formal industry experience yet, I'm actively improving my real-world engineering workflows and always welcome constructive feedback.", 'ojt');
     } else if (hasAny(q, ['ojt', 'working', 'employed', 'job', 'currently work', 'do you work', 'have a work', 'internship', 'available', 'hiring'])) {
       reply('Work / OJT Status:', "Currently, I have no work nor in an OJT yet. I am a 4th-year BSIT student looking for an IT / Software Internship where I can contribute and gain real industry experience.", 'ojt');
     } else if (hasAny(q, ['responsive', 'fast', 'quick', 'reply', 'screen size', 'scaling'])) {
       appendLine('Responsiveness:', 'accent');
-      appendLine('Yes — both in how I collaborate with a team and in what we build. In SchedSTI I handled auto-responsive UI scaling and development fixes from bug-testing feedback, and in HTML5/CSS3 I focus on clean layouts that adapt smoothly.');
+      appendLine('Yes, both in how I work with a team and in what we build. In SchedSTI I handled auto-responsive UI scaling and development fixes from bug-testing feedback, and in HTML5/CSS3 I focus on clean layouts that adapt smoothly.');
     } else if (hasAny(q, ['excel', 'strength', 'strong', 'best at', 'good at', 'specialty', 'good in', 'great at'])) {
       appendLine('Where I Excel:', 'accent');
-      appendLine('I do best when turning practical requirements into working software — especially UI layout in HTML5 & CSS3, Object-Oriented Programming in C# and Java, and setting up clean cross-platform builds on Linux Mint and Windows.');
+      appendLine('I do best when turning practical requirements into working software, especially UI layout in HTML5 & CSS3, Object-Oriented Programming in C# and Java, and setting up clean cross-platform builds on Linux Mint and Windows.');
     } else if (hasAny(q, ['schedsti', 'sched', 'scheduling', 'schedule', 'timeslot', 'time slot', 'login'])) {
       if (hasAny(q, ['why', 'standalone', 'desktop', 'offline'])) {
-        reply('SchedSTI (Architecture):', "We built SchedSTI as a standalone C# (.NET Framework) desktop system so Admin/HR, Department Heads, and Faculty can launch it directly on Windows or Linux Mint without a heavy server setup — with my focus on core development and iterative fixes from bug testing.", 'schedsti');
+        reply('SchedSTI (Architecture):', "We built SchedSTI as a standalone C# (.NET Framework) desktop system so Admin/HR, Department Heads, and Faculty can launch it directly on Windows or Linux Mint without a heavy server setup. My part focused on core development and fixing issues from bug testing.", 'schedsti');
       } else if (hasAny(q, ['privacy', 'confidential', 'placeholder', 'instructor', 'name', 'hide'])) {
         reply('SchedSTI (Privacy):', "On this portfolio, we replaced instructor names, subject codes, sections, and exact schedule times with placeholders so no confidential school or faculty information is exposed publicly.", 'schedsti');
       } else {
-        reply('SchedSTI:', "We developed SchedSTI in C# (.NET Framework) so scheduling regular classes and time slots stays clear and conflict-free across Admin/HR, Department Heads, and Faculty. I focused on core application development and refining features from QA and bug-testing feedback.", 'schedsti');
+        reply('SchedSTI:', "We developed SchedSTI in C# (.NET Framework) so scheduling regular classes and time slots stays clear and conflict-free across Admin/HR, Department Heads, and Faculty. I focused on core application development and refining features based on bug-testing feedback.", 'schedsti');
       }
     } else if (hasAny(q, ['crystal', 'gem', 'steven', 'game', 'canvas', 'map', 'main menu', 'startup'])) {
       if (hasAny(q, ['why', 'double', 'offline', 'mint', 'linux'])) {
@@ -230,21 +230,21 @@
       }
     } else if (hasAny(q, ['creation', 'project', 'work', 'built', 'made', 'portfolio', 'app', 'apps', 'show'])) {
       appendLine('My Works:', 'accent');
-      appendLine('1) Amethyx AI [Python, JavaScript, HTML/CSS, Java (Android), SQLite, Cloudflare Workers] — Cross-platform multimodal AI assistant for Linux, Windows (.exe), and Android (.apk) with local RAG, Groq/Gemini routing, voice dictation, and /imagine.');
-      appendLine('2) SchedSTI [C#, .NET Framework] — Role-based scheduling desktop app for regular schedules, time slots, and room allocations across Windows and Linux.');
-      appendLine('3) Crystal Gems! [HTML5, CSS3, JavaScript] — Offline 2D browser game built for Linux Mint with a startup screen, main menu, synthesized audio, and stage maps.');
+      appendLine('1) Amethyx AI [Python, JavaScript, HTML/CSS, Java (Android), SQLite, Cloudflare Workers]: Cross-platform multimodal AI assistant for Linux, Windows (.exe), and Android (.apk) with local RAG, Groq/Gemini routing, voice dictation, and /imagine.');
+      appendLine('2) SchedSTI [C#, .NET Framework]: Role-based scheduling desktop app for regular schedules, time slots, and room allocations across Windows and Linux.');
+      appendLine('3) Crystal Gems! [HTML5, CSS3, JavaScript]: Offline 2D browser game built for Linux Mint with a startup screen, main menu, synthesized audio, and stage maps.');
     } else if (hasAny(q, ['python'])) {
       appendLine('Python:', 'accent');
-      appendLine('I use Python for scripting, logical problem-solving, and powering the local backend/SQLite RAG engine of Amethyx AI — alongside project work in C# (.NET Framework), Java, and HTML5/CSS3/JS.');
+      appendLine('I use Python for scripting, logical problem-solving, and powering the local backend and SQLite RAG engine of Amethyx AI, alongside project work in C# (.NET Framework), Java, and HTML5/CSS3/JS.');
     } else if (hasAny(q, ['java']) && !q.includes('javascript')) {
       appendLine('Java:', 'accent');
-      appendLine('I have Core OOP experience in Java — including Android WebView/vault integration for Amethyx AI, a 2D interactive game with event-driven programming and UML diagrams, plus Oracle Java Fundamentals training.');
+      appendLine('I have Core OOP experience in Java, including Android WebView/vault integration for Amethyx AI, a 2D interactive game with event-driven programming and UML diagrams, plus Oracle Java Fundamentals training.');
     } else if (hasAny(q, ['c#', 'csharp', '.net', 'dotnet'])) {
       appendLine('C# (.NET Framework):', 'accent');
-      appendLine('C# and the .NET Framework are what I used to build SchedSTI, handling role-based access, regular schedule workflows, and cross-platform UI scaling.');
+      appendLine('C# and the .NET Framework are what we used to build SchedSTI, handling role-based access, regular schedule workflows, and cross-platform UI scaling.');
     } else if (hasAny(q, ['html', 'css', 'javascript', 'web', 'frontend', 'front-end'])) {
       appendLine('Web Development:', 'accent');
-      appendLine('I use HTML5, CSS3, and JavaScript for responsive layouts and interactive browser projects — like Crystal Gems! and this portfolio.');
+      appendLine('I use HTML5, CSS3, and JavaScript for responsive layouts and interactive browser projects like Crystal Gems! and this portfolio.');
     } else if (hasAny(q, ['linux', 'mint', 'ubuntu', 'windows', 'os', 'bash', 'cli'])) {
       appendLine('Operating Systems:', 'accent');
       appendLine('I use Linux Mint daily along with Ubuntu and Windows. I like making sure my projects run smoothly on Linux (like double-clickable HTML apps and cross-platform .NET tools).');
@@ -253,7 +253,7 @@
       appendLine('I have foundational knowledge of SAP S/4HANA process concepts and enterprise logic from my coursework and school training.');
     } else if (hasAny(q, ['empathy', 'soft', 'team', 'communicate', 'communication', 'collab', 'attitude'])) {
       appendLine('Soft Skills & Empathy:', 'accent');
-      appendLine('Empathy really matters to me in IT — building software means thinking about the people actually using it. Alongside empathy, I bring analytical thinking, team collaboration, adaptability, and time management.');
+      appendLine('Empathy really matters to me in IT, since building software means thinking about the people actually using it. Alongside empathy, I bring analytical thinking, team collaboration, adaptability, and time management.');
     } else if (hasAny(q, ['skill', 'tech', 'language', 'lang', 'stack', 'tool']) || /\bknow\b/.test(q)) {
       appendLine('Technical & Soft Skills:', 'accent');
       appendLine('Technical: HTML5, CSS3, JavaScript, C# (.NET Framework), Java (Core OOP & Android), Python, SQLite, Linux, SAP S/4HANA (Fundamentals), and GitHub.');
@@ -263,7 +263,7 @@
       appendLine('You can connect with me on LinkedIn at https://www.linkedin.com/in/rhon-yuan-edan-63069736b.');
     } else if (hasAny(q, ['github', 'git', 'repo', 'waniboogles', 'code', 'source'])) {
       appendLine('GitHub:', 'accent');
-      appendLine('My GitHub account is WaniBoogles — you can check out repos like AmethyxAI (https://github.com/WaniBoogles/AmethyxAI), Crystal-Gems-Fan-made-game-, and SchedSTI at https://github.com/WaniBoogles.');
+      appendLine('My GitHub account is WaniBoogles. You can check out repos like AmethyxAI (https://github.com/WaniBoogles/AmethyxAI), Crystal-Gems-Fan-made-game-, and WebPortfolio_Edan at https://github.com/WaniBoogles.');
     } else if (hasAny(q, ['email', 'contact', 'mail', 'reach', 'hire', 'message', 'apply'])) {
       appendLine('Contact:', 'accent');
       appendLine('Thank you for checking out my portfolio! You can email me at rhonyuane@gmail.com, connect on LinkedIn (https://www.linkedin.com/in/rhon-yuan-edan-63069736b), or reach me via GitHub (WaniBoogles).');
@@ -272,7 +272,7 @@
       appendLine('I am a 4th-year Bachelor of Science in Information Technology (BSIT) student at STI College Lucena, with a STEM Senior High School background.');
     } else if (hasAny(q, ['theme', 'color', 'purple', 'dark', 'pixel', 'portrait', 'design', 'style'])) {
       appendLine('Design & Aesthetic:', 'accent');
-      appendLine('I prefer dark gray, black, and purple with a clean, minimal look — inspired a bit by Prime Kindergarten and the warm, mature feel of the Steven Universe menu, plus my own Piskel pixel portrait.');
+      appendLine('I prefer dark gray, black, and purple with a clean, minimal look, inspired a bit by Prime Kindergarten and the warm, mature feel of the Steven Universe menu, plus my own Piskel pixel portrait.');
     } else if (hasAny(q, ['who are you', 'your name', 'nickname', 'yuan', 'wani', 'edan', 'about'])) {
       appendLine('About Me:', 'accent');
       appendLine('I am Rhon Yuan M. Edan (you can call me Yuan, or Wani). I am a BSIT student focused on OOP fundamentals, enterprise logic, and multi-platform software/web development.');
@@ -296,7 +296,7 @@
       } else if (lastTopic === 'crystal') {
         reply('Crystal Gems!:', "I focused on making it work completely offline in any browser on Linux Mint, with synthesized Web Audio and live-rendered stage maps.", 'crystal');
       } else if (lastTopic === 'amethyx') {
-        reply('Amethyx AI:', "I wanted one unified assistant that stays private and portable across Linux, Windows, and Android — combining local SQLite RAG, Groq & Gemini cloud routing, and a zero-key Cloudflare Worker relay.", 'amethyx');
+        reply('Amethyx AI:', "I wanted one unified assistant that stays private and portable across Linux, Windows, and Android, combining local SQLite RAG, Groq & Gemini cloud routing, and a zero-key Cloudflare Worker relay.", 'amethyx');
       } else {
         reply('', "Feel free to ask a specific question about SchedSTI, Crystal Gems!, Amethyx AI, my skills, or my OJT status!", lastTopic);
       }

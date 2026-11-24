@@ -6,19 +6,19 @@
   const projectDetailsData = {
     schedsti: {
       title: 'SchedSTI — Project Overview',
-      overview: 'A standalone C# (.NET Framework) desktop scheduling system we developed for school operations, helping Admin/HR, Department Heads, and Faculty organize regular class schedules, avoid time/room conflicts, and view personal schedules cleanly across Windows and Linux Mint. My role focused on core application development and resolving issues surfaced through iterative debugging and bug-testing feedback.',
+      overview: 'A standalone C# (.NET Framework) desktop scheduling system we developed for school operations, helping Admin/HR, Department Heads, and Faculty organize regular class schedules, avoid time or room conflicts, and view personal schedules cleanly across Windows and Linux Mint. My role focused on core development and resolving issues found during debugging and bug testing.',
       features: [
         ['Role-Based Access Workflow:', 'Dedicated views and permissions we structured for Admin/HR, Department Heads, and Faculty members.'],
-        ['Conflict-Free Scheduling:', 'Regular schedule management that prevents overlapping time slots, instructors, and room assignments, refined through continuous QA testing.'],
-        ['Auto-Responsive Desktop UI:', 'Built to scale cleanly across different desktop resolutions and cross-platform environments (Windows & Linux Mint).'],
-        ['Confidentiality by Design:', 'All portfolio previews replace real instructor names, subject codes, sections, and schedule times with sanitized placeholders.']
+        ['Conflict-Free Scheduling:', 'Regular schedule management that prevents overlapping time slots, instructors, and room assignments, refined through continuous bug testing.'],
+        ['Auto-Responsive Desktop UI:', 'Built to scale cleanly across different desktop resolutions on Windows and Linux Mint.'],
+        ['Confidentiality by Design:', 'All portfolio previews replace real instructor names, subject codes, sections, and schedule times with safe placeholders.']
       ],
       note: 'Repository is private to protect school system internals.',
       repo: ''
     },
     crystal: {
       title: 'Crystal Gems! — Project Overview',
-      overview: 'A self-contained, offline 2D browser game inspired by Steven Universe and engineered to launch effortlessly on Linux Mint with a double-click — requiring zero external servers, installs, or dependencies.',
+      overview: 'A self-contained, offline 2D browser game inspired by Steven Universe and built to launch on Linux Mint with a simple double-click, requiring no external servers, installs, or dependencies.',
       features: [
         ['Zero-Install Offline Architecture:', 'Runs directly from local HTML5, CSS3, and JavaScript files in any modern browser on Linux Mint or Windows.'],
         ['Custom Startup & Main Menu:', 'Features a themed startup splash sequence and a warm, mature menu interface tailored for smooth keyboard and mouse interaction.'],
@@ -167,7 +167,7 @@
       name: 'Empathy',
       cat: 'Soft Skill · User-Centered Mindset',
       icon: 'assets/icons/soft-empathy.svg',
-      desc: 'Putting yourself in the shoes of end-users and teammates — understanding their frustrations, privacy concerns, and everyday workflows.',
+      desc: 'Putting yourself in the shoes of end-users and teammates by understanding their frustrations, privacy concerns, and everyday workflows.',
       usage: 'Guides how I design clear interfaces, hide confidential school data in public previews, and build tools that feel comfortable and human to use.'
     }
   };
