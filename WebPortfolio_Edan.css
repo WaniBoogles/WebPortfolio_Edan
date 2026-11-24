@@ -180,18 +180,14 @@ body:has(.terminal-window.is-maximized) .site-header {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 5px 12px;
-  border-radius: 999px;
-  background: rgba(26, 21, 36, 0.9);
-  border: 1px solid var(--border);
-  font-size: 0.76rem;
+  padding: 4px 0;
+  font-size: 0.78rem;
   color: var(--text-secondary);
   text-decoration: none;
-  transition: border-color 0.2s ease, color 0.2s ease;
+  transition: color 0.2s ease;
 }
 
 .nav-status:hover {
-  border-color: var(--purple-mid);
   color: var(--text);
 }
 
@@ -912,37 +908,26 @@ body:has(.terminal-window.is-maximized) .site-header {
 }
 
 .project-tagline {
-  display: inline-block;
-  align-self: flex-start;
-  font-size: 0.84rem;
-  font-weight: 700;
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 600;
   line-height: 1.35;
   color: var(--purple-soft);
-  background: rgba(168, 85, 247, 0.12);
-  border: 1px solid rgba(168, 85, 247, 0.3);
-  border-radius: 6px;
-  padding: 4px 10px;
-  margin-bottom: 10px;
-  letter-spacing: 0.01em;
+  margin-bottom: 4px;
 }
 
 .project-arch {
   display: block;
-  font-size: 0.8rem;
+  font-family: var(--mono);
+  font-size: 0.76rem;
   line-height: 1.5;
-  color: var(--text-secondary);
-  background: rgba(20, 16, 28, 0.88);
-  border: 1px solid var(--border);
-  border-left: 2px solid var(--purple-mid);
-  border-radius: 6px;
-  padding: 7px 11px;
+  color: var(--text-muted);
   margin-bottom: 12px;
 }
 
 .project-arch strong {
-  color: var(--text);
-  font-weight: 700;
-  letter-spacing: 0.01em;
+  color: var(--text-secondary);
+  font-weight: 600;
 }
 
 .project-desc {
@@ -1316,12 +1301,9 @@ svg.ext-arrow {
   display: inline-flex;
   align-items: center;
   gap: 7px;
-  padding: 4px 10px;
-  border-radius: 999px;
-  background: var(--bg-block);
-  border: 1px solid var(--border);
+  padding: 0 2px;
   font-family: var(--mono);
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   color: var(--text-secondary);
 }
 
@@ -1903,8 +1885,8 @@ svg.ext-arrow {
   }
 
   .nav-status {
-    font-size: 0.73rem;
-    padding: 4px 11px;
+    font-size: 0.74rem;
+    padding: 2px 0;
   }
 
   .nav-links {
@@ -2052,13 +2034,11 @@ svg.ext-arrow {
   }
 
   .project-tagline {
-    font-size: 0.78rem;
-    padding: 4px 9px;
+    font-size: 0.82rem;
   }
 
   .project-arch {
-    font-size: 0.76rem;
-    padding: 6px 10px;
+    font-size: 0.73rem;
   }
 
   .project-desc {

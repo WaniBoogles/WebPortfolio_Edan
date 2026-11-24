@@ -202,17 +202,17 @@
       reply('Work / OJT Status:', "Currently, I have no work nor in an OJT yet. I am a 4th-year BSIT student looking for an IT / Software Internship where I can contribute and gain real industry experience.", 'ojt');
     } else if (hasAny(q, ['responsive', 'fast', 'quick', 'reply', 'screen size', 'scaling'])) {
       appendLine('Responsiveness:', 'accent');
-      appendLine('Yes — both in how I communicate with a team and in what I build. In SchedSTI I handled auto-responsive UI scaling across different monitor resolutions, and in HTML5/CSS3 I focus on clean layouts that adapt smoothly.');
+      appendLine('Yes — both in how I collaborate with a team and in what we build. In SchedSTI I handled auto-responsive UI scaling and development fixes from bug-testing feedback, and in HTML5/CSS3 I focus on clean layouts that adapt smoothly.');
     } else if (hasAny(q, ['excel', 'strength', 'strong', 'best at', 'good at', 'specialty', 'good in', 'great at'])) {
       appendLine('Where I Excel:', 'accent');
       appendLine('I do best when turning practical requirements into working software — especially UI layout in HTML5 & CSS3, Object-Oriented Programming in C# and Java, and setting up clean cross-platform builds on Linux Mint and Windows.');
     } else if (hasAny(q, ['schedsti', 'sched', 'scheduling', 'schedule', 'timeslot', 'time slot', 'login'])) {
       if (hasAny(q, ['why', 'standalone', 'desktop', 'offline'])) {
-        reply('SchedSTI (Architecture):', "I built SchedSTI as a standalone C# (.NET Framework) desktop system so Admin/HR, Department Heads, and Faculty can launch it directly on Windows or Linux Mint and manage regular schedules cleanly without needing a heavy web/server setup.", 'schedsti');
+        reply('SchedSTI (Architecture):', "We built SchedSTI as a standalone C# (.NET Framework) desktop system so Admin/HR, Department Heads, and Faculty can launch it directly on Windows or Linux Mint without a heavy server setup — with my focus on core development and iterative fixes from bug testing.", 'schedsti');
       } else if (hasAny(q, ['privacy', 'confidential', 'placeholder', 'instructor', 'name', 'hide'])) {
-        reply('SchedSTI (Privacy):', "On this portfolio, I replaced instructor names, subject codes, sections, and exact schedule times with placeholders so no confidential school or faculty information is exposed publicly.", 'schedsti');
+        reply('SchedSTI (Privacy):', "On this portfolio, we replaced instructor names, subject codes, sections, and exact schedule times with placeholders so no confidential school or faculty information is exposed publicly.", 'schedsti');
       } else {
-        reply('SchedSTI:', "I built SchedSTI in C# (.NET Framework) so scheduling regular classes and time slots is clear and conflict-free across Admin/HR, Department Heads, and Faculty. It runs cross-platform on Windows and Linux Mint.", 'schedsti');
+        reply('SchedSTI:', "We developed SchedSTI in C# (.NET Framework) so scheduling regular classes and time slots stays clear and conflict-free across Admin/HR, Department Heads, and Faculty. I focused on core application development and refining features from QA and bug-testing feedback.", 'schedsti');
       }
     } else if (hasAny(q, ['crystal', 'gem', 'steven', 'game', 'canvas', 'map', 'main menu', 'startup'])) {
       if (hasAny(q, ['why', 'double', 'offline', 'mint', 'linux'])) {
@@ -292,7 +292,7 @@
       reply('', "Hey! Ask me anything about my works (SchedSTI, Crystal Gems!, Amethyx AI), skills, OJT status, GitHub, or email.", 'greeting');
     } else if (hasAny(q, ['why', 'how', 'tell me more', 'more']) && lastTopic) {
       if (lastTopic === 'schedsti') {
-        reply('SchedSTI:', "Building it as a standalone .NET app made role-based access, conflict checking, and running across Windows and Linux Mint fast and straightforward for school use.", 'schedsti');
+        reply('SchedSTI:', "Building it together as a standalone .NET app let us iterate quickly on role-based access, conflict checking, and bug-testing fixes across Windows and Linux Mint.", 'schedsti');
       } else if (lastTopic === 'crystal') {
         reply('Crystal Gems!:', "I focused on making it work completely offline in any browser on Linux Mint, with synthesized Web Audio and live-rendered stage maps.", 'crystal');
       } else if (lastTopic === 'amethyx') {

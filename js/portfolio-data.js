@@ -6,10 +6,10 @@
   const projectDetailsData = {
     schedsti: {
       title: 'SchedSTI — Project Overview',
-      overview: 'A standalone C# (.NET Framework) desktop scheduling system built for school operations, helping Admin/HR, Department Heads, and Faculty organize regular class schedules, avoid time/room conflicts, and view personal schedules cleanly across Windows and Linux Mint.',
+      overview: 'A standalone C# (.NET Framework) desktop scheduling system we developed for school operations, helping Admin/HR, Department Heads, and Faculty organize regular class schedules, avoid time/room conflicts, and view personal schedules cleanly across Windows and Linux Mint. My role focused on core application development and resolving issues surfaced through iterative debugging and bug-testing feedback.',
       features: [
-        ['Role-Based Access Workflow:', 'Dedicated views and permissions for Admin/HR, Department Heads, and Faculty members.'],
-        ['Conflict-Free Scheduling:', 'Structured regular schedule management that prevents overlapping time slots, instructors, and room assignments.'],
+        ['Role-Based Access Workflow:', 'Dedicated views and permissions we structured for Admin/HR, Department Heads, and Faculty members.'],
+        ['Conflict-Free Scheduling:', 'Regular schedule management that prevents overlapping time slots, instructors, and room assignments, refined through continuous QA testing.'],
         ['Auto-Responsive Desktop UI:', 'Built to scale cleanly across different desktop resolutions and cross-platform environments (Windows & Linux Mint).'],
         ['Confidentiality by Design:', 'All portfolio previews replace real instructor names, subject codes, sections, and schedule times with sanitized placeholders.']
       ],

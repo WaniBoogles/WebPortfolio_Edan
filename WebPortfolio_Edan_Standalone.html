@@ -283,18 +283,14 @@ body:has(.terminal-window.is-maximized) .site-header {
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 5px 12px;
-  border-radius: 999px;
-  background: rgba(26, 21, 36, 0.9);
-  border: 1px solid var(--border);
-  font-size: 0.76rem;
+  padding: 4px 0;
+  font-size: 0.78rem;
   color: var(--text-secondary);
   text-decoration: none;
-  transition: border-color 0.2s ease, color 0.2s ease;
+  transition: color 0.2s ease;
 }
 
 .nav-status:hover {
-  border-color: var(--purple-mid);
   color: var(--text);
 }
 
@@ -1015,37 +1011,26 @@ body:has(.terminal-window.is-maximized) .site-header {
 }
 
 .project-tagline {
-  display: inline-block;
-  align-self: flex-start;
-  font-size: 0.84rem;
-  font-weight: 700;
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 600;
   line-height: 1.35;
   color: var(--purple-soft);
-  background: rgba(168, 85, 247, 0.12);
-  border: 1px solid rgba(168, 85, 247, 0.3);
-  border-radius: 6px;
-  padding: 4px 10px;
-  margin-bottom: 10px;
-  letter-spacing: 0.01em;
+  margin-bottom: 4px;
 }
 
 .project-arch {
   display: block;
-  font-size: 0.8rem;
+  font-family: var(--mono);
+  font-size: 0.76rem;
   line-height: 1.5;
-  color: var(--text-secondary);
-  background: rgba(20, 16, 28, 0.88);
-  border: 1px solid var(--border);
-  border-left: 2px solid var(--purple-mid);
-  border-radius: 6px;
-  padding: 7px 11px;
+  color: var(--text-muted);
   margin-bottom: 12px;
 }
 
 .project-arch strong {
-  color: var(--text);
-  font-weight: 700;
-  letter-spacing: 0.01em;
+  color: var(--text-secondary);
+  font-weight: 600;
 }
 
 .project-desc {
@@ -1419,12 +1404,9 @@ svg.ext-arrow {
   display: inline-flex;
   align-items: center;
   gap: 7px;
-  padding: 4px 10px;
-  border-radius: 999px;
-  background: var(--bg-block);
-  border: 1px solid var(--border);
+  padding: 0 2px;
   font-family: var(--mono);
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   color: var(--text-secondary);
 }
 
@@ -2006,8 +1988,8 @@ svg.ext-arrow {
   }
 
   .nav-status {
-    font-size: 0.73rem;
-    padding: 4px 11px;
+    font-size: 0.74rem;
+    padding: 2px 0;
   }
 
   .nav-links {
@@ -2155,13 +2137,11 @@ svg.ext-arrow {
   }
 
   .project-tagline {
-    font-size: 0.78rem;
-    padding: 4px 9px;
+    font-size: 0.82rem;
   }
 
   .project-arch {
-    font-size: 0.76rem;
-    padding: 6px 10px;
+    font-size: 0.73rem;
   }
 
   .project-desc {
@@ -2636,8 +2616,10 @@ svg.ext-arrow {
             <div class="project-tagline">Role-Based Desktop Scheduling System</div>
             <div class="project-arch"><strong>Stack:</strong> C# + .NET Framework · <strong>Architecture:</strong> RBAC &amp; Conflict Detection</div>
             <p class="project-desc">
-              A role-based desktop application for managing regular class schedules, conflict-free
-              time slots, and room allocations across Admin/HR, Department Heads, and Faculty.
+              A collaborative role-based desktop application we built for managing regular class
+              schedules, conflict-free time slots, and room allocations across Admin/HR, Department
+              Heads, and Faculty — where I handled core development and iterative fixes from QA
+              and bug-testing feedback.
             </p>
             <div class="lang-row">
               <button type="button" class="lang-tag" data-info="csharp"><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMjggMTI4Ij48cGF0aCBmaWxsPSIjNjgyMTdBIiBkPSJNMTE1IDM2TDY3IDhhNiA2IDAgMCAwLTYgMEwxMyAzNmE2IDYgMCAwIDAtMyA1djQ2YTYgNiAwIDAgMCAzIDVsNDggMjhhNiA2IDAgMCAwIDYgMGw0OC0yOGE2IDYgMCAwIDAgMy01VjQxYTYgNiAwIDAgMC0zLTV6Ii8+PHBhdGggZmlsbD0iIzlCNEY5NiIgZD0iTTY0IDY0TDEzIDkyYTYgNiAwIDAgMS0zLTVWNDFhNiA2IDAgMCAxIDMtNWw0OC0yOGE2IDYgMCAwIDEgMy0xdjU3eiIgb3BhY2l0eT0iLjM1Ii8+PHBhdGggZmlsbD0iI0ZGRiIgZD0iTTYyIDg0Yy0xMiAwLTIxLTktMjEtMjBzOS0yMCAyMS0yMGM4IDAgMTUgNCAxOCAxMGwtOSA1Yy0yLTMtNS01LTktNS02IDAtMTEgNC0xMSAxMHM1IDEwIDExIDEwYzQgMCA4LTIgOS01bDkgNWMtMyA2LTEwIDEwLTE4IDEwem0zNC0yNGgtNHYtNWgtNHY1aC01di01aC00djVoLTR2NGg0djVoLTR2NGg0djVoNHYtNWg1djVoNHYtNWg0di00aC00di01aDR2LTR6bS04IDloLTV2LTVoNXY1eiIvPjwvc3ZnPg==" alt="">C#</button>
@@ -3093,10 +3075,10 @@ svg.ext-arrow {
   const projectDetailsData = {
     schedsti: {
       title: 'SchedSTI — Project Overview',
-      overview: 'A standalone C# (.NET Framework) desktop scheduling system built for school operations, helping Admin/HR, Department Heads, and Faculty organize regular class schedules, avoid time/room conflicts, and view personal schedules cleanly across Windows and Linux Mint.',
+      overview: 'A standalone C# (.NET Framework) desktop scheduling system we developed for school operations, helping Admin/HR, Department Heads, and Faculty organize regular class schedules, avoid time/room conflicts, and view personal schedules cleanly across Windows and Linux Mint. My role focused on core application development and resolving issues surfaced through iterative debugging and bug-testing feedback.',
       features: [
-        ['Role-Based Access Workflow:', 'Dedicated views and permissions for Admin/HR, Department Heads, and Faculty members.'],
-        ['Conflict-Free Scheduling:', 'Structured regular schedule management that prevents overlapping time slots, instructors, and room assignments.'],
+        ['Role-Based Access Workflow:', 'Dedicated views and permissions we structured for Admin/HR, Department Heads, and Faculty members.'],
+        ['Conflict-Free Scheduling:', 'Regular schedule management that prevents overlapping time slots, instructors, and room assignments, refined through continuous QA testing.'],
         ['Auto-Responsive Desktop UI:', 'Built to scale cleanly across different desktop resolutions and cross-platform environments (Windows & Linux Mint).'],
         ['Confidentiality by Design:', 'All portfolio previews replace real instructor names, subject codes, sections, and schedule times with sanitized placeholders.']
       ],
@@ -3756,17 +3738,17 @@ svg.ext-arrow {
       reply('Work / OJT Status:', "Currently, I have no work nor in an OJT yet. I am a 4th-year BSIT student looking for an IT / Software Internship where I can contribute and gain real industry experience.", 'ojt');
     } else if (hasAny(q, ['responsive', 'fast', 'quick', 'reply', 'screen size', 'scaling'])) {
       appendLine('Responsiveness:', 'accent');
-      appendLine('Yes — both in how I communicate with a team and in what I build. In SchedSTI I handled auto-responsive UI scaling across different monitor resolutions, and in HTML5/CSS3 I focus on clean layouts that adapt smoothly.');
+      appendLine('Yes — both in how I collaborate with a team and in what we build. In SchedSTI I handled auto-responsive UI scaling and development fixes from bug-testing feedback, and in HTML5/CSS3 I focus on clean layouts that adapt smoothly.');
     } else if (hasAny(q, ['excel', 'strength', 'strong', 'best at', 'good at', 'specialty', 'good in', 'great at'])) {
       appendLine('Where I Excel:', 'accent');
       appendLine('I do best when turning practical requirements into working software — especially UI layout in HTML5 & CSS3, Object-Oriented Programming in C# and Java, and setting up clean cross-platform builds on Linux Mint and Windows.');
     } else if (hasAny(q, ['schedsti', 'sched', 'scheduling', 'schedule', 'timeslot', 'time slot', 'login'])) {
       if (hasAny(q, ['why', 'standalone', 'desktop', 'offline'])) {
-        reply('SchedSTI (Architecture):', "I built SchedSTI as a standalone C# (.NET Framework) desktop system so Admin/HR, Department Heads, and Faculty can launch it directly on Windows or Linux Mint and manage regular schedules cleanly without needing a heavy web/server setup.", 'schedsti');
+        reply('SchedSTI (Architecture):', "We built SchedSTI as a standalone C# (.NET Framework) desktop system so Admin/HR, Department Heads, and Faculty can launch it directly on Windows or Linux Mint without a heavy server setup — with my focus on core development and iterative fixes from bug testing.", 'schedsti');
       } else if (hasAny(q, ['privacy', 'confidential', 'placeholder', 'instructor', 'name', 'hide'])) {
-        reply('SchedSTI (Privacy):', "On this portfolio, I replaced instructor names, subject codes, sections, and exact schedule times with placeholders so no confidential school or faculty information is exposed publicly.", 'schedsti');
+        reply('SchedSTI (Privacy):', "On this portfolio, we replaced instructor names, subject codes, sections, and exact schedule times with placeholders so no confidential school or faculty information is exposed publicly.", 'schedsti');
       } else {
-        reply('SchedSTI:', "I built SchedSTI in C# (.NET Framework) so scheduling regular classes and time slots is clear and conflict-free across Admin/HR, Department Heads, and Faculty. It runs cross-platform on Windows and Linux Mint.", 'schedsti');
+        reply('SchedSTI:', "We developed SchedSTI in C# (.NET Framework) so scheduling regular classes and time slots stays clear and conflict-free across Admin/HR, Department Heads, and Faculty. I focused on core application development and refining features from QA and bug-testing feedback.", 'schedsti');
       }
     } else if (hasAny(q, ['crystal', 'gem', 'steven', 'game', 'canvas', 'map', 'main menu', 'startup'])) {
       if (hasAny(q, ['why', 'double', 'offline', 'mint', 'linux'])) {
@@ -3846,7 +3828,7 @@ svg.ext-arrow {
       reply('', "Hey! Ask me anything about my works (SchedSTI, Crystal Gems!, Amethyx AI), skills, OJT status, GitHub, or email.", 'greeting');
     } else if (hasAny(q, ['why', 'how', 'tell me more', 'more']) && lastTopic) {
       if (lastTopic === 'schedsti') {
-        reply('SchedSTI:', "Building it as a standalone .NET app made role-based access, conflict checking, and running across Windows and Linux Mint fast and straightforward for school use.", 'schedsti');
+        reply('SchedSTI:', "Building it together as a standalone .NET app let us iterate quickly on role-based access, conflict checking, and bug-testing fixes across Windows and Linux Mint.", 'schedsti');
       } else if (lastTopic === 'crystal') {
         reply('Crystal Gems!:', "I focused on making it work completely offline in any browser on Linux Mint, with synthesized Web Audio and live-rendered stage maps.", 'crystal');
       } else if (lastTopic === 'amethyx') {
