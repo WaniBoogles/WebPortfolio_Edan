@@ -1051,22 +1051,21 @@ body:has(.terminal-window.is-maximized) .site-header {
   gap: 6px;
   font-family: inherit;
   font-size: 0.78rem;
-  font-weight: 600;
-  color: var(--purple-soft);
-  background: var(--purple-tint);
-  border: 1px solid rgba(168, 85, 247, 0.28);
-  padding: 5px 11px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid var(--border);
+  padding: 4px 10px;
   border-radius: 6px;
   cursor: pointer;
-  transition: border-color 0.18s ease, background-color 0.18s ease, color 0.18s ease, transform 0.18s var(--ease);
+  transition: border-color 0.18s ease, background-color 0.18s ease, color 0.18s ease;
 }
 
 .lang-tag:hover,
 .lang-tag:focus-visible {
-  border-color: var(--purple-soft);
-  background: rgba(168, 85, 247, 0.22);
-  color: #ffffff;
-  transform: translateY(-1px);
+  border-color: var(--purple-mid);
+  background: var(--purple-tint);
+  color: var(--text);
   outline: none;
 }
 
@@ -1476,14 +1475,12 @@ svg.ext-arrow {
 .gh-stats-row {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 10px;
+  gap: 16px;
+  padding: 4px 0 14px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
 }
 
 .gh-stat-box {
-  background: rgba(13, 10, 18, 0.65);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  padding: 10px 14px;
   display: flex;
   flex-direction: column;
   gap: 3px;
@@ -2558,7 +2555,6 @@ svg.ext-arrow {
           <div class="project-body">
             <h3 class="project-title">Amethyx AI</h3>
             <div class="project-tagline">Multi-Platform RAG AI Assistant</div>
-            <div class="project-arch"><strong>Stack:</strong> Python + SQLite RAG · <strong>Platforms:</strong> Linux, Windows, Android</div>
             <p class="project-desc">
               A cross-platform multimodal AI assistant for Linux, Windows (.exe), and Android (.apk),
               combining local SQLite RAG memory, live web search, Groq &amp; Gemini cloud routing,
@@ -2614,7 +2610,6 @@ svg.ext-arrow {
           <div class="project-body">
             <h3 class="project-title">SchedSTI</h3>
             <div class="project-tagline">Role-Based Desktop Scheduling System</div>
-            <div class="project-arch"><strong>Stack:</strong> C# + .NET Framework · <strong>Architecture:</strong> RBAC &amp; Conflict Detection</div>
             <p class="project-desc">
               A collaborative role-based desktop application we built for managing regular class
               schedules, conflict-free time slots, and room allocations across Admin/HR, Department
@@ -2661,7 +2656,6 @@ svg.ext-arrow {
           <div class="project-body">
             <h3 class="project-title">Crystal Gems!</h3>
             <div class="project-tagline">Offline 2D Browser Game &amp; Audio Engine</div>
-            <div class="project-arch"><strong>Stack:</strong> HTML5 Canvas + Web Audio · <strong>Target:</strong> Zero-Dependency Web &amp; Linux</div>
             <p class="project-desc">
               An offline 2D browser game built to launch cleanly on Linux Mint, featuring a custom
               startup splash, interactive main menu, synthesized audio, and playable stage maps.
